@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "Http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.fgq.demo.mapper.OrderMapper">
+
+
+<!--   动态sql: if标签 -->
+    <select id="findByIf" resultType="order" parameterType="order">
+        select * from tb_order
+       <where>
+           <if test="id!=null">
+               and id = #{id}
+           </if>
+           <if test="price!=null">
+               and price = #{price}
+           </if>
+           <if test="num!=null">
+               and num = #{num}
+           </if>
+       </where>
+    </select>
+
+<!--   动态sql: foreach标签 -->
+<!--   等价于 select * from tb_order where id in(?,?,?)  -->
+    <select id="findByList" resultType="order" parameterType="list">
+        select * from tb_order
+        <where>
+            <foreach collection="list" open="id in (" close=")" item="id" separator=",">
+                #{id}
+            </foreach>
+        </where>
+    </select>
+
+
+<!--    sql片段，抽取通用sql-->
+    <sql id="commonSql">
+        select * from tb_order
+    </sql>
+
+
+    <!--   include 引用通用sql -->
+    <select id="findByList2" resultType="order" parameterType="list">
+        <include refid="commonSql"/>
+        <where>
+            <foreach collection="list" open="id in (" close=")" item="id" separator=",">
+                #{id}
+            </foreach>
+        </where>
+    </select>
+
+
+    <!--   include 引用通用sql -->
+    <select id="findByUserId" resultType="order" parameterType="int">
+        <include refid="commonSql"/>
+        <where>
+            <if test="user_id!=null">
+                and user_id = #{user_id}
+            </if>
+        </where>
+    </select>
+
+<!--
+一对一查询
+    column属性：下方select的sql查询出结果的名称
+    property属性：实体中字段名
+    javaType属性：实体全类名（非必填，MyBatis会自动检测找到相应的类）-->
+    <resultMap id="onoToOneMap" type="com.fgq.demo.domain.Order">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="price" property="price"/>
+        <result column="num" property="num"/>
+
+        <association property="user" javaType="com.fgq.demo.domain.User">
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="address" property="address"/>
+            <result column="yxzt" property="yxzt"/>
+        </association>
+    </resultMap>
+<!--  resultMap引用定义好的 -->
+    <select id="findOneToOne" resultMap="onoToOneMap">
+        SELECT o.id, o.user_id, o.name, o.price, o.num,
+            u.username, u.address, u.yxzt
+        FROM tb_order o, tb_user u WHERE o.user_id = u.id
+    </select>
+
+
+
+<!--一对多查询
+    ofType:集合中的实体
+-->
+    <resultMap id="onoToMoreMap" type="com.fgq.demo.domain.User">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="address" property="address"/>
+        <result column="yxzt" property="yxzt"/>
+
+        <collection property="orderList" ofType="com.fgq.demo.domain.Order">
+            <id column="oid" property="id"/>
+            <result column="name" property="name"/>
+            <result column="price" property="price"/>
+            <result column="num" property="num"/>
+        </collection>
+    </resultMap>
+    <select id="findOneToMore" resultMap="onoToMoreMap" parameterType="int">
+        SELECT o.id oid, o.user_id, o.name, o.price, o.num,
+            u.id, u.username, u.address, u.yxzt
+        FROM tb_order o, tb_user u WHERE o.user_id = u.id and u.id = #{id}
+    </select>
+</mapper>

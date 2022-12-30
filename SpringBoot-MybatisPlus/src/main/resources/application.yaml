@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/cloud_user?useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+logging:
+  level:
+    com.fgq.demo: warn
+  pattern:
+    dateformat: HH:mm:ss:SSS
+mybatis-plus:
+  configuration:
+#   查询返回结果的驼峰式映射
+    map-underscore-to-camel-case: true
+#   sql控制台日志，测试使用
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#   别名扫描，xml中resultType不用再写全路径了
+  type-aliases-package: com.fgq.demo.domain
+#  扫描自定义xml的文件路径
+  mapper-locations: classpath*:mybatis/*.xml
