@@ -1,0 +1,41 @@
+# 单机模式
+spring:
+  data:
+    mongodb:
+      host: 127.0.0.1       # 主机地址
+      database: fgq         # 数据库
+      port: 27017           # 端口
+#     也可以使用uri连接
+#     uri:  mongodb://127.0.0.1:27017/fgq
+
+# 副本集集群模式
+#spring:
+#  data:
+#    mongodb:
+#      uri: mongodb://127.0.0.1:27017,127.0.0.1:27018,127.0.0.1:27019/fgq?connect=replicaSet&slaveOk=true&replicaSet=fgq233
+
+# 分片集群模式
+#spring:
+#  data:
+#    mongodb:
+#      uri: mongodb://127.0.0.1:27101,127.0.0.1:27102/fgq
+
+
+# 单机模式(认证)
+#spring:
+#  data:
+#    mongodb:
+#     uri:  mongodb://fgq6666:666666@127.0.0.1:27017/fgq
+
+
+# 副本集集群模式(认证)
+#spring:
+#  data:
+#    mongodb:
+#      uri: mongodb://fgq6666:666666@127.0.0.1:27001,127.0.0.1:27002,127.0.0.1:27003/fgq?connect=replicaSet&slaveOk=true&replicaSet=shard1
+
+# 分片集群模式(认证)
+#spring:
+#  data:
+#    mongodb:
+#      uri: mongodb://fgq6666:666666@127.0.0.1:27101,127.0.0.1:27102/fgq
