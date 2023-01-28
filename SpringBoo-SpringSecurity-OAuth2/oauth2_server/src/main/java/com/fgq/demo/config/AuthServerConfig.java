@@ -1,6 +1,5 @@
 package com.fgq.demo.config;
 
-import com.fgq.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
