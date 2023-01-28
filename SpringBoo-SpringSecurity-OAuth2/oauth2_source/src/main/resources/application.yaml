@@ -3,3 +3,19 @@ server:
 spring:
   application:
     name: oauth2-source
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/oauth2?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 19931126
+    driver-class-name: com.mysql.cj.jdbc.Driver
+security:
+  oauth2:
+    client:
+      client-id: admin
+      client-secret: admin123456
+      access-token-uri: http://127.0.0.1:9001/oauth/token
+      user-authorization-uri: http://127.0.0.1:9001/oauth/authorize
+    resource:
+      token-info-uri: http://127.0.0.1:9001/oauth/check_token
+
+
