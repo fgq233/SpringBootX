@@ -14,7 +14,6 @@
     <groupId>com.fgq.demo</groupId>
     <artifactId>SpringBoot-Shiro</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>SpringBoot-Shiro</name>
 
 
     <properties>

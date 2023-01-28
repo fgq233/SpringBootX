@@ -1,0 +1,10 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: oauth2-server
+#  datasource:
+#    url: jdbc:mysql://127.0.0.1:3306/cloud_user?useSSL=false&serverTimezone=UTC
+#    username: root
+#    password: 19931126
+#    driver-class-name: com.mysql.cj.jdbc.Driver

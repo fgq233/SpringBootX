@@ -13,7 +13,6 @@
     <groupId>com.fgq.demo</groupId>
     <artifactId>SpringBoot-Zookeeper</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>SpringBoot-Zookeeper</name>
 
     <properties>
         <java.version>1.8</java.version>

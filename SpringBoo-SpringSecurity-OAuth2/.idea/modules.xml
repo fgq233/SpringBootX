@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2.iml" filepath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oauth2_server/oauth2_server.iml" filepath="$PROJECT_DIR$/oauth2_server/oauth2_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oauth2_source/oauth2_source.iml" filepath="$PROJECT_DIR$/oauth2_source/oauth2_source.iml" />
+    </modules>
+  </component>
+</project>

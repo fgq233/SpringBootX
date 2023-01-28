@@ -14,7 +14,6 @@
     <groupId>com.fgq.demo</groupId>
     <artifactId>SpringBoot-Https</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>SpringBoot-Https</name>
 
     <properties>
         <java.version>1.8</java.version>
