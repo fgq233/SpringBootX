@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-Https/SpringBoot-Https.iml" filepath="$PROJECT_DIR$/SpringBoot-Https/SpringBoot-Https.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-MongoDB/SpringBoot-MongoDB.iml" filepath="$PROJECT_DIR$/SpringBoot-MongoDB/SpringBoot-MongoDB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-MybatisPlus/SpringBoot-MybatisPlus.iml" filepath="$PROJECT_DIR$/SpringBoot-MybatisPlus/SpringBoot-MybatisPlus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-Shiro/SpringBoot-Shiro.iml" filepath="$PROJECT_DIR$/SpringBoot-Shiro/SpringBoot-Shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-SpringSecurity/SpringBoot-SpringSecurity.iml" filepath="$PROJECT_DIR$/SpringBoot-SpringSecurity/SpringBoot-SpringSecurity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-Zookeeper/SpringBoot-Zookeeper.iml" filepath="$PROJECT_DIR$/SpringBoot-Zookeeper/SpringBoot-Zookeeper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringBootX.iml" filepath="$PROJECT_DIR$/.idea/SpringBootX.iml" />
+    </modules>
+  </component>
+</project>
