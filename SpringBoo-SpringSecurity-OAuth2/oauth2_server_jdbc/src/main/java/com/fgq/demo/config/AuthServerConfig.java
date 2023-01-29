@@ -92,7 +92,7 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
         endpoints
                 .allowedTokenEndpointRequestMethods(HttpMethod.GET, HttpMethod.POST)
                 .authenticationManager(authenticationManager)            // 认证管理器，密码模式需要
-                .authorizationCodeServices(authorizationCodeServices())  // 授权码管理
+                .authorizationCodeServices(authorizationCodeServices())  // 授权码保存策略
                 .tokenStore(jdbcTokenStore())                            // token存储
                 .tokenServices(tokenServices());                         // token令牌管理
     }

@@ -3,13 +3,23 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jdbc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_source" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_source/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-Https" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-Https/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-MongoDB" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-MongoDB/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-MybatisPlus" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-MybatisPlus/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-Shiro" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-Shiro/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-Zookeeper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-Zookeeper/src/main/java" charset="UTF-8" />
   </component>
 </project>

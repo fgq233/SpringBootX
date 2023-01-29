@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringBootX.iml" filepath="$PROJECT_DIR$/.idea/SpringBootX.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server/oauth2_server.iml" filepath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server/oauth2_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jdbc/oauth2_server_jdbc.iml" filepath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jdbc/oauth2_server_jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_redis/oauth2_server_redis.iml" filepath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_redis/oauth2_server_redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_source/oauth2_source.iml" filepath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_source/oauth2_source.iml" />
     </modules>
   </component>
