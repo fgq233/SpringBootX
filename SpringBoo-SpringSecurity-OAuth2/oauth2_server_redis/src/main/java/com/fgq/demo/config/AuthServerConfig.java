@@ -35,7 +35,7 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
      * token令牌保存策略---使用Redis存储
      */
     @Bean
-    public TokenStore jdbcTokenStore() {
+    public TokenStore redisTokenStore() {
         return new RedisTokenStore(redisConnectionFactory);
     }
 
@@ -66,7 +66,7 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
         endpoints
                 .allowedTokenEndpointRequestMethods(HttpMethod.GET, HttpMethod.POST)
                 .authenticationManager(authenticationManager)            // 认证管理器(密码模式需要)
-                .tokenStore(jdbcTokenStore());                           // token令牌保存策略
+                .tokenStore(redisTokenStore());                          // token令牌保存策略
     }
 
     /**
