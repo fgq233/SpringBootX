@@ -14,3 +14,17 @@ security:
       token-info-uri: http://127.0.0.1:9001/oauth/check_token
 
 
+# 基于 jwt token
+#security:
+#  oauth2:
+#    client:
+#      client-id: admin
+#      client-secret: admin123456
+#      access-token-uri: http://127.0.0.1:9001/oauth/token
+#      user-authorization-uri: http://127.0.0.1:9001/oauth/authorize
+#    resource:
+#      jwt:
+#        key-uri: http://127.0.0.1:9001/oauth/token_key
+
+
+

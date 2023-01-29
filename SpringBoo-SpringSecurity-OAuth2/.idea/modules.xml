@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2.iml" filepath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2.iml" />
       <module fileurl="file://$PROJECT_DIR$/oauth2_server/oauth2_server.iml" filepath="$PROJECT_DIR$/oauth2_server/oauth2_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/oauth2_server_jdbc/oauth2_server_jdbc.iml" filepath="$PROJECT_DIR$/oauth2_server_jdbc/oauth2_server_jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oauth2_server_jwt/oauth2_server_jwt.iml" filepath="$PROJECT_DIR$/oauth2_server_jwt/oauth2_server_jwt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oauth2_server_redis/oauth2_server_redis.iml" filepath="$PROJECT_DIR$/oauth2_server_redis/oauth2_server_redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/oauth2_source/oauth2_source.iml" filepath="$PROJECT_DIR$/oauth2_source/oauth2_source.iml" />
     </modules>
   </component>

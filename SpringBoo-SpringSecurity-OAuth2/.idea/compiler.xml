@@ -9,12 +9,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="oauth2_server" />
         <module name="oauth2_server_jdbc" />
+        <module name="oauth2_server_jwt" />
+        <module name="oauth2_server_redis" />
         <module name="oauth2_source" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="oauth2_server" target="1.8" />
       <module name="oauth2_server_jdbc" target="1.8" />
+      <module name="oauth2_server_jwt" target="8" />
+      <module name="oauth2_server_redis" target="8" />
       <module name="oauth2_source" target="1.8" />
       <module name="SpringBoo-SpringSecurity-OAuth2" target="1.8" />
     </bytecodeTargetLevel>
