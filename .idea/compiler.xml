@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="oauth2_server" />
+        <module name="oauth2_server_jwt" />
         <module name="SpringBoot-Shiro" />
         <module name="oauth2_server_jdbc" />
         <module name="SpringBoot-Https" />
@@ -22,6 +23,7 @@
     <bytecodeTargetLevel>
       <module name="oauth2_server" target="1.8" />
       <module name="oauth2_server_jdbc" target="1.8" />
+      <module name="oauth2_server_jwt" target="8" />
       <module name="oauth2_server_redis" target="8" />
       <module name="oauth2_source" target="1.8" />
       <module name="SpringBoo-SpringSecurity-OAuth2" target="1.8" />
@@ -43,6 +45,7 @@
       <module name="SpringBoot-Zookeeper" options="-parameters" />
       <module name="oauth2_server" options="-parameters" />
       <module name="oauth2_server_jdbc" options="-parameters" />
+      <module name="oauth2_server_jwt" options="-parameters" />
       <module name="oauth2_server_redis" options="-parameters" />
       <module name="oauth2_source" options="-parameters" />
     </option>

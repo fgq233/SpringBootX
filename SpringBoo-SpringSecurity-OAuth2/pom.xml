@@ -21,6 +21,7 @@
         <module>oauth2_source</module>
         <module>oauth2_server_jdbc</module>
         <module>oauth2_server_redis</module>
+        <module>oauth2_server_jwt</module>
     </modules>
 
 
