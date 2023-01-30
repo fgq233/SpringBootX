@@ -19,8 +19,7 @@ public class UserService implements UserDetailsService {
 
     private List<User> userList;
 
-    @PostConstruct
-    public void initData() {
+    private void initData() {
         String password = new BCryptPasswordEncoder().encode("123456");
         userList = new ArrayList<>();
         userList.add(new User("fgq1", password, AuthorityUtils.commaSeparatedStringToAuthorityList("admin")));
@@ -29,6 +28,7 @@ public class UserService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        initData();
         List<User> list = userList.stream().filter(user -> user.getUsername().equals(username)).collect(Collectors.toList());
         if (!CollectionUtils.isEmpty(list)) {
             return list.get(0);

@@ -3,6 +3,7 @@ server:
 spring:
   application:
     name: oauth2-source
+#  基于非 jwt 格式token项目 *********** oauth2_server、oauth2_server_jdbc、oauth2_redis
 security:
   oauth2:
     client:
@@ -14,7 +15,7 @@ security:
       token-info-uri: http://127.0.0.1:9001/oauth/check_token
 
 
-# 基于 jwt token
+# 基于 jwt 格式token项目 *********** oauth2_server_jwt
 #security:
 #  oauth2:
 #    client:
@@ -27,4 +28,10 @@ security:
 #        key-uri: http://127.0.0.1:9001/oauth/token_key
 
 
+#  基于 jwt 非对称加密项目，用于获取 jwt 解析的公钥  *********** oauth2_jwk
+#  security:
+#    oauth2:
+#      resourceserver:
+#        jwt:
+#          jwk-set-uri: http://127.0.0.1:9001/rsa/publicKey
 
