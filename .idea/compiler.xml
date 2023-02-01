@@ -7,26 +7,32 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="consumer" />
         <module name="oauth2_server" />
-        <module name="oauth2_server_jwt" />
-        <module name="SpringBoot-Shiro" />
         <module name="oauth2_server_jdbc" />
+        <module name="oauth2_server_jwt" />
+        <module name="oauth2_server_redis" />
+        <module name="oauth2_source" />
+        <module name="publisher" />
         <module name="SpringBoot-Https" />
         <module name="SpringBoot-MongoDB" />
-        <module name="SpringBoot-Zookeeper" />
-        <module name="oauth2_source" />
         <module name="SpringBoot-MybatisPlus" />
+        <module name="SpringBoot-Shiro" />
         <module name="SpringBoot-SpringSecurity" />
-        <module name="oauth2_server_redis" />
+        <module name="SpringBoot-Zookeeper" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="activemq_publish" target="1.5" />
+      <module name="consumer" target="1.8" />
       <module name="oauth2_server" target="1.8" />
       <module name="oauth2_server_jdbc" target="1.8" />
       <module name="oauth2_server_jwt" target="8" />
       <module name="oauth2_server_redis" target="8" />
       <module name="oauth2_source" target="1.8" />
+      <module name="publisher" target="1.8" />
       <module name="SpringBoo-SpringSecurity-OAuth2" target="1.8" />
+      <module name="SpringBoot-ActiveMQ" target="1.8" />
       <module name="SpringBoot-Https" target="1.8" />
       <module name="SpringBoot-MongoDB" target="1.8" />
       <module name="SpringBoot-MybatisPlus" target="1.8" />
