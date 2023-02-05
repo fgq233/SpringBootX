@@ -15,10 +15,12 @@
         <option value="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootActiveMQ/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot-ActiveMQ/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot-RocketMQ/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/SpringBoot-RocketMQ/producer/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootActiveMQ/activemq_publish/pom.xml" />
       </set>
     </option>

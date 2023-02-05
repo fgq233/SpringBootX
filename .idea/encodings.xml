@@ -21,6 +21,10 @@
     <file url="file://$PROJECT_DIR$/SpringBoot-MongoDB/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-MybatisPlus" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-MybatisPlus/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-RocketMQ" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-RocketMQ/rocketmq-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-RocketMQ/rocketmq-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-RocketMQ/rocketmq-producer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-Shiro" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-Shiro/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity" charset="UTF-8" />

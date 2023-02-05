@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-Https/SpringBoot-Https.iml" filepath="$PROJECT_DIR$/SpringBoot-Https/SpringBoot-Https.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-MongoDB/SpringBoot-MongoDB.iml" filepath="$PROJECT_DIR$/SpringBoot-MongoDB/SpringBoot-MongoDB.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-MybatisPlus/SpringBoot-MybatisPlus.iml" filepath="$PROJECT_DIR$/SpringBoot-MybatisPlus/SpringBoot-MybatisPlus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-RocketMQ/SpringBoot-RocketMQ.iml" filepath="$PROJECT_DIR$/SpringBoot-RocketMQ/SpringBoot-RocketMQ.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-Shiro/SpringBoot-Shiro.iml" filepath="$PROJECT_DIR$/SpringBoot-Shiro/SpringBoot-Shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-SpringSecurity/SpringBoot-SpringSecurity.iml" filepath="$PROJECT_DIR$/SpringBoot-SpringSecurity/SpringBoot-SpringSecurity.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-Zookeeper/SpringBoot-Zookeeper.iml" filepath="$PROJECT_DIR$/SpringBoot-Zookeeper/SpringBoot-Zookeeper.iml" />
@@ -18,6 +19,9 @@
       <module fileurl="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_redis/oauth2_server_redis.iml" filepath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_redis/oauth2_server_redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_source/oauth2_source.iml" filepath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_source/oauth2_source.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/publisher.iml" filepath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/publisher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-RocketMQ/rocketmq-api/rocketmq-api.iml" filepath="$PROJECT_DIR$/SpringBoot-RocketMQ/rocketmq-api/rocketmq-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-RocketMQ/rocketmq-consumer/rocketmq-consumer.iml" filepath="$PROJECT_DIR$/SpringBoot-RocketMQ/rocketmq-consumer/rocketmq-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-RocketMQ/rocketmq-producer/rocketmq-producer.iml" filepath="$PROJECT_DIR$/SpringBoot-RocketMQ/rocketmq-producer/rocketmq-producer.iml" />
     </modules>
   </component>
 </project>

@@ -14,6 +14,9 @@
         <module name="oauth2_server_redis" />
         <module name="oauth2_source" />
         <module name="publisher" />
+        <module name="rocketmq-api" />
+        <module name="rocketmq-consumer" />
+        <module name="rocketmq-producer" />
         <module name="SpringBoot-Https" />
         <module name="SpringBoot-MongoDB" />
         <module name="SpringBoot-MybatisPlus" />
@@ -30,12 +33,17 @@
       <module name="oauth2_server_jwt" target="8" />
       <module name="oauth2_server_redis" target="8" />
       <module name="oauth2_source" target="1.8" />
+      <module name="producer" target="1.5" />
       <module name="publisher" target="1.8" />
+      <module name="rocketmq-api" target="1.8" />
+      <module name="rocketmq-consumer" target="1.8" />
+      <module name="rocketmq-producer" target="1.8" />
       <module name="SpringBoo-SpringSecurity-OAuth2" target="1.8" />
       <module name="SpringBoot-ActiveMQ" target="1.8" />
       <module name="SpringBoot-Https" target="1.8" />
       <module name="SpringBoot-MongoDB" target="1.8" />
       <module name="SpringBoot-MybatisPlus" target="1.8" />
+      <module name="SpringBoot-RocketMQ" target="1.8" />
       <module name="SpringBoot-Shiro" target="1.8" />
       <module name="SpringBoot-SpringSecurity" target="1.8" />
       <module name="SpringBoot-Zookeeper" target="1.8" />
