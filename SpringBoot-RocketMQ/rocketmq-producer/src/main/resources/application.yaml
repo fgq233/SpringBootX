@@ -4,3 +4,5 @@ rocketmq:
   name-server: 127.0.0.1:9876
   producer:
     group: FGQ_TEST_GROUP
+#    access-key: rocketmqX
+#    secret-key: 12345678

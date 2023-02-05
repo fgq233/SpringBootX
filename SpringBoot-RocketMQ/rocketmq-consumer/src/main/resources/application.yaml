@@ -2,3 +2,6 @@ server:
   port: 8082
 rocketmq:
   name-server: 127.0.0.1:9876
+#  consumer:
+#    access-key: rocketmqX
+#    secret-key: 12345678
