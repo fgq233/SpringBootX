@@ -7,22 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="oauth2_server_jwt" />
-        <module name="oauth2_server" />
-        <module name="SpringBoot-Shiro" />
-        <module name="oauth2_server_jdbc" />
-        <module name="SpringBoot-MongoDB" />
-        <module name="SprintBoot-Phantomjs" />
-        <module name="rocketmq-producer" />
-        <module name="oauth2_source" />
-        <module name="oauth2_server_redis" />
-        <module name="SpringBoot-Https" />
-        <module name="rocketmq-consumer" />
-        <module name="publisher" />
-        <module name="SpringBoot-Zookeeper" />
-        <module name="rocketmq-api" />
-        <module name="SpringBoot-MybatisPlus" />
         <module name="consumer" />
+        <module name="oauth2_server" />
+        <module name="oauth2_server_jdbc" />
+        <module name="oauth2_server_jwt" />
+        <module name="oauth2_server_redis" />
+        <module name="oauth2_source" />
+        <module name="publisher" />
+        <module name="rocketmq-api" />
+        <module name="rocketmq-consumer" />
+        <module name="rocketmq-producer" />
+        <module name="SpringBoot-Https" />
+        <module name="SpringBoot-MongoDB" />
+        <module name="SpringBoot-MybatisPlus" />
+        <module name="SpringBoot-Shiro" />
+        <module name="SpringBoot-SpringSecurity" />
+        <module name="SpringBoot-Zookeeper" />
+        <module name="SprintBoot-Phantomjs" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -21,13 +21,21 @@
     <file url="file://$PROJECT_DIR$/SpringBoot-RocketMQ/rocketmq-producer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-Shiro" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-Shiro/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jdbc" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jwt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jwt/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_redis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_source" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_source/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-Zookeeper" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-Zookeeper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SprintBoot-Phantomjs" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SprintBoot-Phantomjs/src/main/java" charset="UTF-8" />
   </component>
 </project>

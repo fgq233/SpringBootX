@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-MybatisPlus/SpringBoot-MybatisPlus.iml" filepath="$PROJECT_DIR$/SpringBoot-MybatisPlus/SpringBoot-MybatisPlus.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-RocketMQ/SpringBoot-RocketMQ.iml" filepath="$PROJECT_DIR$/SpringBoot-RocketMQ/SpringBoot-RocketMQ.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-Shiro/SpringBoot-Shiro.iml" filepath="$PROJECT_DIR$/SpringBoot-Shiro/SpringBoot-Shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-SpringSecurity/SpringBoot-SpringSecurity.iml" filepath="$PROJECT_DIR$/SpringBoot-SpringSecurity/SpringBoot-SpringSecurity.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/SpringBoot-SpringSecurity-OAuth2.iml" filepath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/SpringBoot-SpringSecurity-OAuth2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-Zookeeper/SpringBoot-Zookeeper.iml" filepath="$PROJECT_DIR$/SpringBoot-Zookeeper/SpringBoot-Zookeeper.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringBootX.iml" filepath="$PROJECT_DIR$/.idea/SpringBootX.iml" />
