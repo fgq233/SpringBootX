@@ -10,7 +10,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.fgq.demo</groupId>
+    <groupId>com.zookeeper.demo</groupId>
     <artifactId>SpringBoot-Zookeeper</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 

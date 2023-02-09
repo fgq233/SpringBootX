@@ -11,7 +11,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.fgq.demo</groupId>
+    <groupId>com.https.demo</groupId>
     <artifactId>SpringBoot-Https</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 

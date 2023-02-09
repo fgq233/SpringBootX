@@ -11,7 +11,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.fgq.demo</groupId>
+    <groupId>com.shiro.demo</groupId>
     <artifactId>SpringBoot-Shiro</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 

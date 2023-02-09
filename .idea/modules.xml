@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/SpringBoot-SpringSecurity-OAuth2.iml" filepath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/SpringBoot-SpringSecurity-OAuth2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-Zookeeper/SpringBoot-Zookeeper.iml" filepath="$PROJECT_DIR$/SpringBoot-Zookeeper/SpringBoot-Zookeeper.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringBootX.iml" filepath="$PROJECT_DIR$/.idea/SpringBootX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SprintBoot-Phantomjs/SprintBoot-Phantomjs.iml" filepath="$PROJECT_DIR$/SprintBoot-Phantomjs/SprintBoot-Phantomjs.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/consumer.iml" filepath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server/oauth2_server.iml" filepath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server/oauth2_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jdbc/oauth2_server_jdbc.iml" filepath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jdbc/oauth2_server_jdbc.iml" />

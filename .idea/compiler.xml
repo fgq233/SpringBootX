@@ -12,6 +12,7 @@
         <module name="SpringBoot-Shiro" />
         <module name="oauth2_server_jdbc" />
         <module name="SpringBoot-MongoDB" />
+        <module name="SprintBoot-Phantomjs" />
         <module name="rocketmq-producer" />
         <module name="oauth2_source" />
         <module name="oauth2_server_redis" />
@@ -42,11 +43,13 @@
       <module name="SpringBoot-Https" target="1.8" />
       <module name="SpringBoot-MongoDB" target="1.8" />
       <module name="SpringBoot-MybatisPlus" target="1.8" />
+      <module name="SpringBoot-Phantomjs" target="8" />
       <module name="SpringBoot-RocketMQ" target="1.8" />
       <module name="SpringBoot-Shiro" target="1.8" />
       <module name="SpringBoot-SpringSecurity" target="1.8" />
       <module name="SpringBoot-SpringSecurity-OAuth2" target="1.8" />
       <module name="SpringBoot-Zookeeper" target="1.8" />
+      <module name="SprintBoot-Phantomjs" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -57,6 +60,7 @@
       <module name="SpringBoot-Shiro" options="-parameters" />
       <module name="SpringBoot-SpringSecurity" options="-parameters" />
       <module name="SpringBoot-Zookeeper" options="-parameters" />
+      <module name="SprintBoot-Phantomjs" options="-parameters" />
       <module name="consumer" options="-parameters" />
       <module name="oauth2_server" options="-parameters" />
       <module name="oauth2_server_jdbc" options="-parameters" />

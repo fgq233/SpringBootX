@@ -5,19 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f189799-2d54-4793-a502-16d4e98ac9d2" name="Changes" comment="渲染">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_83.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/SprintBoot-Phantomjs/SprintBoot-Phantomjs.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SprintBoot-Phantomjs/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SprintBoot-Phantomjs/src/main/java/com/hantomjs/demo/HantomjsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/fgq/demo/ConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/activemq/demo/ConsumerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/fgq/demo/config/ActiveMqConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/activemq/demo/config/ActiveMqConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/fgq/demo/listener/MsgListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/activemq/demo/listener/MsgListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/fgq/demo/listener/MsgListener2.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/activemq/demo/listener/MsgListener2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/fgq/demo/listener/MsgListener3.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/activemq/demo/listener/MsgListener3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/fgq/demo/listener/MsgListener4.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/activemq/demo/listener/MsgListener4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/main/java/com/fgq/demo/ActiveMqConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/main/java/com/activemq/demo/ActiveMqConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/main/java/com/fgq/demo/PublisherApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/main/java/com/activemq/demo/PublisherApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/main/java/com/fgq/demo/TxSerice.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/main/java/com/activemq/demo/TxSerice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.fgq.demo/AckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.activemq.demo/AckTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.fgq.demo/DeadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.activemq.demo/DeadTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.fgq.demo/PublisherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.activemq.demo/PublisherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.fgq.demo/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.activemq.demo/SysUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.fgq.demo/TxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.activemq.demo/TxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.fgq.demo/TypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.activemq.demo/TypeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-Https/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/src/main/java/com/fgq/demo/HttpsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-Https/src/main/java/com/https/demo/HttpsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/src/main/java/com/fgq/demo/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-Https/src/main/java/com/https/demo/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-MongoDB/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2LU8MkmcIUMIYnjZKmL5Izk5qW3" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -25,7 +60,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.MybatisPlusApplication">
+  <component name="RunManager" selected="Spring Boot.ShiroApplication">
     <configuration name="HttpsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="SpringBoot-Https" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.fgq.demo.HttpsApplication" />
@@ -33,9 +68,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MongoDBApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SpringBoot-MongoDB" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mongodb.demo.MongoDBApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MongoDBApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="SpringBoot-MongoDB" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.fgq.demo.MongoDBApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisPlusApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SpringBoot-MybatisPlus" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mybatisplus.demo.MybatisPlusApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -70,7 +119,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675914255429</updated>
-      <workItem from="1675914257407" duration="714000" />
+      <workItem from="1675914257407" duration="3079000" />
+      <workItem from="1675923248490" duration="973000" />
     </task>
     <task id="LOCAL-00001" summary="渲染">
       <created>1675914681157</created>
@@ -79,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675914681157</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="渲染">
+      <created>1675920948190</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675920948190</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +152,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />

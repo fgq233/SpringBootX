@@ -11,7 +11,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.fgq.demo</groupId>
+    <groupId>com.mybatisplus.demo</groupId>
     <artifactId>SpringBoot-MybatisPlus</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 

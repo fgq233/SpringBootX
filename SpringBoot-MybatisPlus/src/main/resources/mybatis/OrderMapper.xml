@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "Http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.fgq.demo.mapper.OrderMapper">
+<mapper namespace="com.mybatisplus.demo.mapper.OrderMapper">
 
 
 <!--   动态sql: if标签 -->
@@ -66,13 +66,13 @@
     column属性：下方select的sql查询出结果的名称
     property属性：实体中字段名
     javaType属性：实体全类名（非必填，MyBatis会自动检测找到相应的类）-->
-    <resultMap id="onoToOneMap" type="com.fgq.demo.domain.Order">
+    <resultMap id="onoToOneMap" type="com.mybatisplus.demo.domain.Order">
         <id column="id" property="id"/>
         <result column="name" property="name"/>
         <result column="price" property="price"/>
         <result column="num" property="num"/>
 
-        <association property="user" javaType="com.fgq.demo.domain.User">
+        <association property="user" javaType="com.mybatisplus.demo.domain.User">
             <id column="user_id" property="id"/>
             <result column="username" property="username"/>
             <result column="address" property="address"/>
@@ -91,13 +91,13 @@
 <!--一对多查询
     ofType:集合中的实体
 -->
-    <resultMap id="onoToMoreMap" type="com.fgq.demo.domain.User">
+    <resultMap id="onoToMoreMap" type="com.mybatisplus.demo.domain.User">
         <id column="id" property="id"/>
         <result column="username" property="username"/>
         <result column="address" property="address"/>
         <result column="yxzt" property="yxzt"/>
 
-        <collection property="orderList" ofType="com.fgq.demo.domain.Order">
+        <collection property="orderList" ofType="com.mybatisplus.demo.domain.Order">
             <id column="oid" property="id"/>
             <result column="name" property="name"/>
             <result column="price" property="price"/>
