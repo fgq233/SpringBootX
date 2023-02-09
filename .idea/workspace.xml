@@ -4,37 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f189799-2d54-4793-a502-16d4e98ac9d2" name="Changes" comment="渲染">
-      <change afterPath="$PROJECT_DIR$/SprintBoot-Phantomjs/SprintBoot-Phantomjs.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SprintBoot-Phantomjs/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SprintBoot-Phantomjs/src/main/java/com/hantomjs/demo/HantomjsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="6f189799-2d54-4793-a502-16d4e98ac9d2" name="Changes" comment="666666">
+      <change afterPath="$PROJECT_DIR$/SprintBoot-Phantomjs/src/main/java/com/hantomjs/demo/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SprintBoot-Phantomjs/src/main/java/com/hantomjs/demo/util/ConverType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SprintBoot-Phantomjs/src/main/java/com/hantomjs/demo/util/HtmlCoverUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SprintBoot-Phantomjs/src/main/java/com/hantomjs/demo/util/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SprintBoot-Phantomjs/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SprintBoot-Phantomjs/src/main/resources/static/htmlCover.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SprintBoot-Phantomjs/src/main/resources/static/phantomjs.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SprintBoot-Phantomjs/src/main/resources/static/testPdf.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/fgq/demo/ConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/activemq/demo/ConsumerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/fgq/demo/config/ActiveMqConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/activemq/demo/config/ActiveMqConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/fgq/demo/listener/MsgListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/activemq/demo/listener/MsgListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/fgq/demo/listener/MsgListener2.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/activemq/demo/listener/MsgListener2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/fgq/demo/listener/MsgListener3.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/activemq/demo/listener/MsgListener3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/fgq/demo/listener/MsgListener4.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java/com/activemq/demo/listener/MsgListener4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/main/java/com/fgq/demo/ActiveMqConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/main/java/com/activemq/demo/ActiveMqConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/main/java/com/fgq/demo/PublisherApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/main/java/com/activemq/demo/PublisherApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/main/java/com/fgq/demo/TxSerice.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/main/java/com/activemq/demo/TxSerice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.fgq.demo/AckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.activemq.demo/AckTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.fgq.demo/DeadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.activemq.demo/DeadTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.fgq.demo/PublisherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.activemq.demo/PublisherTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.fgq.demo/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.activemq.demo/SysUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.fgq.demo/TxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.activemq.demo/TxTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.fgq.demo/TypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/test/java/com.activemq.demo/TypeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpringBoot-Https/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-Https/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/src/main/java/com/fgq/demo/HttpsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-Https/src/main/java/com/https/demo/HttpsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/src/main/java/com/fgq/demo/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-Https/src/main/java/com/https/demo/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-MongoDB/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SprintBoot-Phantomjs/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SprintBoot-Phantomjs/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SprintBoot-Phantomjs/src/main/java/com/hantomjs/demo/HantomjsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SprintBoot-Phantomjs/src/main/java/com/hantomjs/demo/HantomjsApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,65 +33,75 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="2LU8MkmcIUMIYnjZKmL5Izk5qW3" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SprintBoot-Phantomjs/src/main/resources/static" />
   </component>
-  <component name="RunManager" selected="Spring Boot.ShiroApplication">
-    <configuration name="HttpsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="SpringBoot-Https" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fgq.demo.HttpsApplication" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\IDEA\fgqTest\SpringBootX\SprintBoot-Phantomjs\src\main\resources\static" />
+      <recent name="F:\IDEA\fgqTest\SpringBootX\SprintBoot-Phantomjs\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hantomjs.demo.util" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.HantomjsApplication">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hantomjs.demo.util.Test" />
+      <module name="SprintBoot-Phantomjs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hantomjs.demo.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MongoDBApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="SpringBoot-MongoDB" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mongodb.demo.MongoDBApplication" />
+    <configuration name="HantomjsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="SprintBoot-Phantomjs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hantomjs.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hantomjs.demo.HantomjsApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MongoDBApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="SpringBoot-MongoDB" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fgq.demo.MongoDBApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MybatisPlusApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="SpringBoot-MybatisPlus" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mybatisplus.demo.MybatisPlusApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MybatisPlusApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="SpringBoot-MybatisPlus" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fgq.demo.MybatisPlusApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShiroApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="SpringBoot-Shiro" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fgq.demo.ShiroApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ZookeeperApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="SpringBoot-Zookeeper" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fgq.demo.ZookeeperApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Spring Boot.HantomjsApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.HantomjsApplication" />
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -120,7 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675914255429</updated>
       <workItem from="1675914257407" duration="3079000" />
-      <workItem from="1675923248490" duration="973000" />
+      <workItem from="1675923248490" duration="12827000" />
     </task>
     <task id="LOCAL-00001" summary="渲染">
       <created>1675914681157</created>
@@ -136,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675920948190</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="666666">
+      <created>1675925001503</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675925001503</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +157,7 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="渲染" />
-    <option name="LAST_COMMIT_MESSAGE" value="渲染" />
+    <MESSAGE value="666666" />
+    <option name="LAST_COMMIT_MESSAGE" value="666666" />
   </component>
 </project>

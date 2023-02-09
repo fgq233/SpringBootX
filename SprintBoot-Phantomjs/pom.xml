@@ -27,4 +27,15 @@
         </dependency>
     </dependencies>
 
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources/all</directory>
+                <includes>
+                    <include>phantomjs.exe</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
 </project>

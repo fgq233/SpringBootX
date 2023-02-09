@@ -29,13 +29,10 @@
     <build>
         <resources>
             <resource>
-                <directory>src/main/java</directory>
+                <directory>src/main/resources</directory>
                 <includes>
                     <include>server.p12</include>
                 </includes>
-            </resource>
-            <resource>
-                <directory>src/main/resources</directory>
             </resource>
         </resources>
 

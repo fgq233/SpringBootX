@@ -1,8 +1,13 @@
 package com.hantomjs.demo;
 
-/**
- * @author fgq
- * @date 2023年02月09日
- */
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 public class HantomjsApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(HantomjsApplication.class, args);
+    }
+
 }
