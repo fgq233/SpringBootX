@@ -9,15 +9,15 @@
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-MybatisPlus/SpringBoot-MybatisPlus.iml" filepath="$PROJECT_DIR$/SpringBoot-MybatisPlus/SpringBoot-MybatisPlus.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-RocketMQ/SpringBoot-RocketMQ.iml" filepath="$PROJECT_DIR$/SpringBoot-RocketMQ/SpringBoot-RocketMQ.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-Shiro/SpringBoot-Shiro.iml" filepath="$PROJECT_DIR$/SpringBoot-Shiro/SpringBoot-Shiro.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringBoot-SpringSecurity/SpringBoot-SpringSecurity.iml" filepath="$PROJECT_DIR$/SpringBoot-SpringSecurity/SpringBoot-SpringSecurity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/SpringBoot-SpringSecurity-OAuth2.iml" filepath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/SpringBoot-SpringSecurity-OAuth2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-Zookeeper/SpringBoot-Zookeeper.iml" filepath="$PROJECT_DIR$/SpringBoot-Zookeeper/SpringBoot-Zookeeper.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringBootX.iml" filepath="$PROJECT_DIR$/.idea/SpringBootX.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/consumer.iml" filepath="$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/consumer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server/oauth2_server.iml" filepath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server/oauth2_server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jdbc/oauth2_server_jdbc.iml" filepath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jdbc/oauth2_server_jdbc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jwt/oauth2_server_jwt.iml" filepath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jwt/oauth2_server_jwt.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_redis/oauth2_server_redis.iml" filepath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_redis/oauth2_server_redis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_source/oauth2_source.iml" filepath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_source/oauth2_source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server/oauth2_server.iml" filepath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server/oauth2_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jdbc/oauth2_server_jdbc.iml" filepath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jdbc/oauth2_server_jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jwt/oauth2_server_jwt.iml" filepath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jwt/oauth2_server_jwt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_redis/oauth2_server_redis.iml" filepath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_redis/oauth2_server_redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_source/oauth2_source.iml" filepath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_source/oauth2_source.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/publisher.iml" filepath="$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/publisher.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-RocketMQ/rocketmq-api/rocketmq-api.iml" filepath="$PROJECT_DIR$/SpringBoot-RocketMQ/rocketmq-api/rocketmq-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-RocketMQ/rocketmq-consumer/rocketmq-consumer.iml" filepath="$PROJECT_DIR$/SpringBoot-RocketMQ/rocketmq-consumer/rocketmq-consumer.iml" />

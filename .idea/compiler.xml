@@ -7,22 +7,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="consumer" />
-        <module name="oauth2_server" />
-        <module name="oauth2_server_jdbc" />
         <module name="oauth2_server_jwt" />
-        <module name="oauth2_server_redis" />
-        <module name="oauth2_source" />
-        <module name="publisher" />
-        <module name="rocketmq-api" />
-        <module name="rocketmq-consumer" />
-        <module name="rocketmq-producer" />
-        <module name="SpringBoot-Https" />
-        <module name="SpringBoot-MongoDB" />
-        <module name="SpringBoot-MybatisPlus" />
+        <module name="oauth2_server" />
         <module name="SpringBoot-Shiro" />
-        <module name="SpringBoot-SpringSecurity" />
+        <module name="oauth2_server_jdbc" />
+        <module name="SpringBoot-MongoDB" />
+        <module name="rocketmq-producer" />
+        <module name="oauth2_source" />
+        <module name="oauth2_server_redis" />
+        <module name="SpringBoot-Https" />
+        <module name="rocketmq-consumer" />
+        <module name="publisher" />
         <module name="SpringBoot-Zookeeper" />
+        <module name="rocketmq-api" />
+        <module name="SpringBoot-MybatisPlus" />
+        <module name="consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -46,6 +45,7 @@
       <module name="SpringBoot-RocketMQ" target="1.8" />
       <module name="SpringBoot-Shiro" target="1.8" />
       <module name="SpringBoot-SpringSecurity" target="1.8" />
+      <module name="SpringBoot-SpringSecurity-OAuth2" target="1.8" />
       <module name="SpringBoot-Zookeeper" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -57,11 +57,16 @@
       <module name="SpringBoot-Shiro" options="-parameters" />
       <module name="SpringBoot-SpringSecurity" options="-parameters" />
       <module name="SpringBoot-Zookeeper" options="-parameters" />
+      <module name="consumer" options="-parameters" />
       <module name="oauth2_server" options="-parameters" />
       <module name="oauth2_server_jdbc" options="-parameters" />
       <module name="oauth2_server_jwt" options="-parameters" />
       <module name="oauth2_server_redis" options="-parameters" />
       <module name="oauth2_source" options="-parameters" />
+      <module name="publisher" options="-parameters" />
+      <module name="rocketmq-api" options="-parameters" />
+      <module name="rocketmq-consumer" options="-parameters" />
+      <module name="rocketmq-producer" options="-parameters" />
     </option>
   </component>
 </project>

@@ -10,12 +10,12 @@
         <option value="$PROJECT_DIR$/SpringBoot-MongoDB/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot-MybatisPlus/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot-Shiro/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringBoot-SpringSecurity/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot-Zookeeper/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootActiveMQ/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot-ActiveMQ/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot-RocketMQ/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -25,5 +25,5 @@
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>

@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6f189799-2d54-4793-a502-16d4e98ac9d2" name="Changes" comment="渲染">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_69_noneautotype.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_69_noneautotype.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_76.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_76.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_luben_zstd_jni_1_5_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_luben_zstd_jni_1_5_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_3_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_3_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_28_2_jre.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_28_2_jre.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_2_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_63_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_63_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_jms_jakarta_jms_api_2_0_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_jms_jakarta_jms_api_2_0_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_broker_5_15_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_broker_5_15_14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_client_5_15_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_client_5_15_14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_jms_pool_5_15_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_jms_pool_5_15_14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_openwire_legacy_5_15_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_openwire_legacy_5_15_14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_pool_5_15_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_pool_5_15_14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_8_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_j2ee_management_1_1_spec_1_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_j2ee_management_1_1_spec_1_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jms_1_1_spec_1_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jms_1_1_spec_1_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jta_1_1_spec_1_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jta_1_1_spec_1_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_acl_4_9_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_acl_4_9_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_client_4_9_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_client_4_9_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_client_4_9_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_client_4_9_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_common_4_9_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_common_4_9_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_common_4_9_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_common_4_9_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_logging_4_9_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_logging_4_9_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_logging_4_9_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_logging_4_9_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_remoting_4_9_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_remoting_4_9_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_remoting_4_9_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_remoting_4_9_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_spring_boot_2_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_spring_boot_2_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_spring_boot_starter_2_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_spring_boot_starter_2_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_srvutil_4_9_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_srvutil_4_9_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_10_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_hawtbuf_hawtbuf_1_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_hawtbuf_hawtbuf_1_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_1_7_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_1_7_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_8_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_activemq_2_3_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_activemq_2_3_10_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_3_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_3_10_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jms_5_2_14_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jms_5_2_14_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_2_14_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_2_14_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_2_3_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_3_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__commons_codec_commons_codec_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__io_lettuce_lettuce_core_5_3_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__io_micrometer_micrometer_core_1_5_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__io_netty_netty_buffer_4_1_63_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__io_netty_netty_codec_4_1_63_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__io_netty_netty_common_4_1_63_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__io_netty_netty_handler_4_1_63_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__io_netty_netty_resolver_4_1_63_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__io_netty_netty_transport_4_1_63_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__io_projectreactor_reactor_core_3_3_16_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_45.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_45.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_56.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_56.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_latencyutils_LatencyUtils_2_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_security_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_oauth2_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_security_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_security_oauth_boot_spring_security_oauth2_autoconfigure_2_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_security_oauth_spring_security_oauth2_2_3_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_security_spring_security_jwt_1_0_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_spring_aop_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_spring_beans_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_spring_context_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_spring_context_support_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_spring_core_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_spring_expression_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_spring_oxm_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_spring_tx_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_spring_web_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/libraries/Maven__org_yaml_snakeyaml_1_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/SpringBoo-SpringSecurity-OAuth2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/SpringBoot-SpringSecurity-OAuth2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server/oauth2_server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server/oauth2_server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server/src/main/java/com/fgq/demo/ServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server/src/main/java/com/fgq/demo/ServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server/src/main/java/com/fgq/demo/config/AuthServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server/src/main/java/com/fgq/demo/config/AuthServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server/src/main/java/com/fgq/demo/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server/src/main/java/com/fgq/demo/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server/src/main/java/com/fgq/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server/src/main/java/com/fgq/demo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jdbc/oauth2_server_jdbc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jdbc/oauth2_server_jdbc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jdbc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jdbc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jdbc/src/main/java/com/fgq/demo/ServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jdbc/src/main/java/com/fgq/demo/ServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jdbc/src/main/java/com/fgq/demo/config/AuthServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jdbc/src/main/java/com/fgq/demo/config/AuthServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jdbc/src/main/java/com/fgq/demo/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jdbc/src/main/java/com/fgq/demo/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jdbc/src/main/java/com/fgq/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jdbc/src/main/java/com/fgq/demo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jdbc/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jdbc/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jdbc/src/main/resources/oauth2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jdbc/src/main/resources/oauth2.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jwt/oauth2_server_jwt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jwt/oauth2_server_jwt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jwt/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jwt/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jwt/src/main/java/com/fgq/demo/ServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jwt/src/main/java/com/fgq/demo/ServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jwt/src/main/java/com/fgq/demo/config/AuthServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jwt/src/main/java/com/fgq/demo/config/AuthServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jwt/src/main/java/com/fgq/demo/config/JwtTokenEnhancer.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jwt/src/main/java/com/fgq/demo/config/JwtTokenEnhancer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jwt/src/main/java/com/fgq/demo/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jwt/src/main/java/com/fgq/demo/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jwt/src/main/java/com/fgq/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jwt/src/main/java/com/fgq/demo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_jwt/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_jwt/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_redis/oauth2_server_redis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_redis/oauth2_server_redis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_redis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_redis/src/main/java/com/fgq/demo/ServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_redis/src/main/java/com/fgq/demo/ServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_redis/src/main/java/com/fgq/demo/config/AuthServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_redis/src/main/java/com/fgq/demo/config/AuthServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_redis/src/main/java/com/fgq/demo/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_redis/src/main/java/com/fgq/demo/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_redis/src/main/java/com/fgq/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_redis/src/main/java/com/fgq/demo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_server_redis/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_redis/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_source/oauth2_source.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_source/oauth2_source.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_source/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_source/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_source/src/main/java/com/fgq/demo/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_source/src/main/java/com/fgq/demo/ResourceServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_source/src/main/java/com/fgq/demo/SourceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_source/src/main/java/com/fgq/demo/SourceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_source/src/main/java/com/fgq/demo/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_source/src/main/java/com/fgq/demo/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/oauth2_source/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_source/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_45.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_45.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_springframework_spring_aop_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_springframework_spring_beans_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_springframework_spring_context_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_springframework_spring_core_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_springframework_spring_expression_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_springframework_spring_web_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/libraries/Maven__org_yaml_snakeyaml_1_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Https/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_45.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_45.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_assertj_assertj_core_3_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_mockito_mockito_core_3_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_mongodb_bson_4_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_4_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_mongodb_mongodb_driver_sync_4_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_3_0_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_spring_aop_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_spring_beans_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_spring_context_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_spring_core_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_spring_expression_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_spring_test_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_spring_tx_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_spring_web_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/libraries/Maven__org_yaml_snakeyaml_1_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MongoDB/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__com_alibaba_fastjson_1_2_71.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__com_baomidou_mybatis_plus_3_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__com_baomidou_mybatis_plus_annotation_3_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__com_baomidou_mybatis_plus_boot_starter_3_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__com_baomidou_mybatis_plus_core_3_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__com_baomidou_mybatis_plus_extension_3_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__junit_junit_4_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_45.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_45.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_assertj_assertj_core_3_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_junit_platform_junit_platform_launcher_1_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_junit_platform_junit_platform_testkit_1_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_junit_vintage_junit_vintage_engine_5_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_mockito_mockito_core_3_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_mybatis_mybatis_3_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_spring_aop_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_spring_beans_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_spring_context_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_spring_core_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_spring_expression_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_spring_test_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_spring_tx_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_spring_web_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/libraries/Maven__org_yaml_snakeyaml_1_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-MybatisPlus/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__com_auth0_java_jwt_3_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__commons_codec_commons_codec_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_6_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_apache_shiro_shiro_cache_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_apache_shiro_shiro_config_core_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_apache_shiro_shiro_config_ogdl_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_cipher_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_core_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_hash_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_apache_shiro_shiro_ehcache_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_apache_shiro_shiro_event_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_apache_shiro_shiro_lang_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_45.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_45.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_assertj_assertj_core_3_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_mockito_mockito_core_3_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_owasp_encoder_encoder_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_springframework_spring_aop_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_springframework_spring_beans_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_springframework_spring_context_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_springframework_spring_core_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_springframework_spring_expression_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_springframework_spring_test_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_springframework_spring_web_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/libraries/Maven__org_yaml_snakeyaml_1_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-Shiro/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-SpringSecurity/SpringBoot-SpringSecurity.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot-SpringSecurity/pom.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2LU8MkmcIUMIYnjZKmL5Izk5qW3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.MybatisPlusApplication">
+    <configuration name="HttpsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SpringBoot-Https" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fgq.demo.HttpsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MongoDBApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SpringBoot-MongoDB" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fgq.demo.MongoDBApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisPlusApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SpringBoot-MybatisPlus" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fgq.demo.MybatisPlusApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShiroApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SpringBoot-Shiro" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fgq.demo.ShiroApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZookeeperApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SpringBoot-Zookeeper" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fgq.demo.ZookeeperApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f189799-2d54-4793-a502-16d4e98ac9d2" name="Changes" comment="" />
+      <created>1675914255429</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675914255429</updated>
+      <workItem from="1675914257407" duration="414000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="渲染" />
+    <option name="LAST_COMMIT_MESSAGE" value="渲染" />
+  </component>
+</project>
