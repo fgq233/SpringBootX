@@ -78,7 +78,7 @@ function doClip() {
 }
 
 /**
- * 转换渲染，可以是 PDF、PNG、JPEG、BMP等，quality(图片质量)：0-100
+ * 转换渲染，可以是 PDF、PNG、JPEG、BMP、GIF等，quality(图片质量)：0-100
  */
 function doRender() {
     doClip();
