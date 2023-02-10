@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f189799-2d54-4793-a502-16d4e98ac9d2" name="Changes" comment="html转图片、pdf">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot-SpringSecurity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot-SpringSecurity/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SprintBoot-Phantomjs/SprintBoot-Phantomjs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SprintBoot-Phantomjs/SprintBoot-Phantomjs.iml" afterDir="false" />
-    </list>
+    <list default="true" id="6f189799-2d54-4793-a502-16d4e98ac9d2" name="Changes" comment="6" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +61,7 @@
       <recent name="com.hantomjs.demo.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.HantomjsApplication">
+  <component name="RunManager" selected="Spring Boot.HttpsApplication">
     <configuration name="HantomjsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="SprintBoot-Phantomjs" />
       <extension name="coverage">
@@ -89,9 +84,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MongoDBApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SpringBoot-MongoDB" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mongodb.demo.MongoDBApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisPlusApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SpringBoot-MybatisPlus" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mybatisplus.demo.MybatisPlusApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShiroApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SpringBoot-Shiro" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shiro.demo.ShiroApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringSecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="SpringBoot-SpringSecurity" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.security.demo.SpringSecurityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZookeeperApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SpringBoot-Zookeeper" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zookeeper.demo.ZookeeperApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,6 +123,10 @@
       <item itemvalue="Spring Boot.HttpsApplication" />
       <item itemvalue="Spring Boot.HantomjsApplication" />
       <item itemvalue="Spring Boot.SpringSecurityApplication" />
+      <item itemvalue="Spring Boot.ZookeeperApplication" />
+      <item itemvalue="Spring Boot.MongoDBApplication" />
+      <item itemvalue="Spring Boot.ShiroApplication" />
+      <item itemvalue="Spring Boot.MybatisPlusApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -120,7 +147,7 @@
       <workItem from="1675988308641" duration="191000" />
       <workItem from="1675988812771" duration="10813000" />
       <workItem from="1676012955902" duration="858000" />
-      <workItem from="1676016577556" duration="1315000" />
+      <workItem from="1676016577556" duration="1624000" />
     </task>
     <task id="LOCAL-00001" summary="渲染">
       <created>1675914681157</created>
@@ -178,7 +205,28 @@
       <option name="project" value="LOCAL" />
       <updated>1676017760494</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="6">
+      <created>1676018024991</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676018024991</updated>
+    </task>
+    <task id="LOCAL-00010" summary="6">
+      <created>1676018081490</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676018081490</updated>
+    </task>
+    <task id="LOCAL-00011" summary="6">
+      <created>1676018172614</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676018172614</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +250,7 @@
     <MESSAGE value="渲染" />
     <MESSAGE value="666666" />
     <MESSAGE value="html转图片、pdf" />
-    <option name="LAST_COMMIT_MESSAGE" value="html转图片、pdf" />
+    <MESSAGE value="6" />
+    <option name="LAST_COMMIT_MESSAGE" value="6" />
   </component>
 </project>
