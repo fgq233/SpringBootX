@@ -32,7 +32,8 @@ public class HtmlCoverUtil {
         }
         // 调用 phantomjs.exe 程序，使用对应 js 文件转换网页
         Runtime rt = Runtime.getRuntime();
-        System.out.println(sb.toString());
+        // ★★★★★★★★★  转换命令，可以直接在命令行运行 ★★★★★★★★★
+        System.out.println(sb);
         rt.exec(sb.toString());
     }
 

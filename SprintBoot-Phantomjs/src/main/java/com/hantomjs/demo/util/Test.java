@@ -22,7 +22,7 @@ public class Test {
 
     private static void test(String fileName, String fileType, String domSelector) throws Exception {
         String argParams = "https://www.baidu.com" + " " + (DESKTOP_PATH + fileName) + " " + fileType + " " + domSelector;
-        // 转换命令，可以直接在命令行运行
+        // ★★★★★★★★★  转换命令，可以直接在命令行运行 ★★★★★★★★★
         String command = EXE_PATH + " " + JS_PATH + " " + argParams;
         System.out.println(command);
 
