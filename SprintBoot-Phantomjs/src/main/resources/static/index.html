@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页转换</title>
+</head>
+<body>
+
+<form method="post" action="/doCover" target="myframe">
+
+    <label>网页地址(必选)
+        <input type="text" name="htmlUrl" style="width: 666px"/>
+    </label>
+    <br/><br/>
+    <label>文件类型(必选)
+        <select name="fileType" style="width: 666px">
+            <option value="jpg">jpg</option>
+            <option value="png">png</option>
+            <option value="bmp">bmp</option>
+            <option value="pdf">pdf</option>
+        </select>
+    </label>
+    <br/><br/>
+
+    <label>Cookie(可选，示例：key1=value1;key2=value2;key3=value3)<br/>
+        <textarea name="cookies" style="width: 777px;height: 200px"></textarea>
+    </label>
+    <br/><br/>
+
+    <label>Cookie的domain(可选，若设置cookie，则该项必填)
+        <input type="text" name="domain" style="width: 420px"/>
+    </label>
+    <br/><br/>
+
+
+    <label>页面dom元素id(可选，用于裁剪)
+        <input type="text" name="domSelector" style="width: 520px"/>
+    </label>
+    <br/><br/>
+
+    <input type="submit" value="转换">
+</form>
+
+<br/><br/>
+
+<iframe src="" width="888px" height="66px" name="myframe"></iframe>
+
+</body>
+</html>

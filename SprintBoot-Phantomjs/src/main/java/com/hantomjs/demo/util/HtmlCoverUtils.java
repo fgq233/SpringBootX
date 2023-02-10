@@ -3,13 +3,16 @@ package com.hantomjs.demo.util;
 
 import org.springframework.util.CollectionUtils;
 
+import javax.servlet.http.Cookie;
+import javax.swing.filechooser.FileSystemView;
+import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
 /**
  * Html 转为图片、pdf
  */
-public class HtmlCoverUtil {
+public class HtmlCoverUtils {
 
     /**
      * 网页转换
@@ -35,6 +38,30 @@ public class HtmlCoverUtil {
         // ★★★★★★★★★  转换命令，可以直接在命令行运行 ★★★★★★★★★
         System.out.println(sb);
         rt.exec(sb.toString());
+    }
+
+    /**
+     * 添加 Cookie(一般用于认证,在自己的系统才会用到)
+     */
+    public static void addCookies(List<String> params, Cookie[] cookies) {
+        StringBuilder cookiesStr = new StringBuilder();
+        if (cookies != null && cookies.length > 0) {
+            for (Cookie c : cookies) {
+                cookiesStr.append(c.getName()).append("=").append(c.getValue()).append(";");
+            }
+            cookiesStr.deleteCharAt(cookiesStr.length() - 1);
+        } else {
+            cookiesStr.append("null");
+        }
+        params.add(cookiesStr.toString());
+    }
+
+    /**
+     * 获取桌面路径(服务器本机)
+     */
+    public static String getDesktopDir() {
+        File desktopDir = FileSystemView.getFileSystemView().getHomeDirectory();
+        return desktopDir.getAbsolutePath();
     }
 
 }

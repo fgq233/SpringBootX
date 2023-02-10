@@ -4,14 +4,15 @@ var page = require('webpage').create();
 var system = require('system');
 var htmlUrl = system.args[1];      // 网页地址
 var savePath = system.args[2];     // 转换后的文件全路径
-var fileType = system.args[3];     // 转换文件类型，img，pdf
-var domSelector = system.args[4];  // 页面dom裁剪
-var cookies = system.args[5];     // cookie
-var singlePage = system.args[6];  // 用于没有滚动条的页面
+var fileType = system.args[3];     // 转换文件类型，jpg，pdf
+var cookies = system.args[4];      // cookie
+var domain = system.args[5];      // cookie的domain
+var domSelector = system.args[6]; // 页面dom裁剪
+var singlePage = system.args[7];  // 用于没有滚动条的页面
 
 
 if (singlePage) {
-    if (fileType === "img") {
+    if (fileType === "jpg") {
         // 浏览器大小
         page.viewportSize = {width: 1920, height: 1080};
         // 图片大小，可以是固定宽高，也可以是 A4 纸
@@ -38,7 +39,7 @@ if (cookies !== undefined && cookies !== null && cookies.length > 0 && cookies !
             phantom.addCookie({
                 'name': c[0],
                 'value': c[1],
-                'domain': 'localhost',
+                'domain': domain ? domain : "localhost",
                 'path': '/'
             });
         }
@@ -82,10 +83,12 @@ function doClip() {
  */
 function doRender() {
     doClip();
-    if (fileType === "img") {
-        page.render(savePath, {format: 'png', quality: '60'});
+    if (fileType === "jpg") {
+        page.render(savePath, {format: 'jpeg', quality: '60'});
     } else if (fileType === "pdf") {
         page.render(savePath, {format: 'pdf'});
+    } else {
+        page.render(savePath);
     }
     console.error("doRender ok");
 }
