@@ -84,7 +84,7 @@ function doClip() {
 function doRender() {
     doClip();
     if (fileType === "jpg") {
-        page.render(savePath, {format: 'jpeg', quality: '60'});
+        page.render(savePath, {format: 'jpeg', quality: '88'});
     } else if (fileType === "pdf") {
         page.render(savePath, {format: 'pdf'});
     } else {
