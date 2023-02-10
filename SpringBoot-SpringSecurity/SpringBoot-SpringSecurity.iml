@@ -65,7 +65,9 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.11.4" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.11.4" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.11.4" level="project" />
-    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.83" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:2.0.23" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.fastjson2:fastjson2-extension:2.0.23" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.fastjson2:fastjson2:2.0.23" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.20" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-starter-test:2.3.10.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-test:2.3.10.RELEASE" level="project" />
