@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/SpringBoo-SpringSecurity-OAuth2.iml" filepath="$PROJECT_DIR$/SpringBoo-SpringSecurity-OAuth2/SpringBoo-SpringSecurity-OAuth2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-ActiveMQ/SpringBoot-ActiveMQ.iml" filepath="$PROJECT_DIR$/SpringBoot-ActiveMQ/SpringBoot-ActiveMQ.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-Https/SpringBoot-Https.iml" filepath="$PROJECT_DIR$/SpringBoot-Https/SpringBoot-Https.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-MongoDB/SpringBoot-MongoDB.iml" filepath="$PROJECT_DIR$/SpringBoot-MongoDB/SpringBoot-MongoDB.iml" />
