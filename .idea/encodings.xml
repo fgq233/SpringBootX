@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../../MavenHome/MyRepository/org/springframework/boot/spring-boot-starter-parent/2.3.10.RELEASE/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-ActiveMQ" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-ActiveMQ/consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-ActiveMQ/publisher/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-ActiveMQ/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-ActiveMQ/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-Elasticsearch/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-Https" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-Https/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-MongoDB" charset="UTF-8" />
@@ -19,6 +23,8 @@
     <file url="file://$PROJECT_DIR$/SpringBoot-RocketMQ/rocketmq-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-RocketMQ/rocketmq-producer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-RocketMQ/rocketmq-producer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-RocketMQ/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-RocketMQ/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-Shiro" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-Shiro/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity" charset="UTF-8" />
@@ -33,6 +39,8 @@
     <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_server_redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_source" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/oauth2_source/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-SpringSecurity/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot-Zookeeper" charset="UTF-8" />

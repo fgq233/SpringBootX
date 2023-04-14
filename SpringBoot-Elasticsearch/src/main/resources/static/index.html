@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div id="app" style="width: 100%; height: 1000px">
+
+    <el-tabs v-model="activeName">
+        <el-tab-pane label="索引库中文档的增删改查（ElasticsearchRepository）" name="1"></el-tab-pane>
+        <el-tab-pane label="多条件组合查询（ElasticsearchRestTemplate）" name="2"></el-tab-pane>
+        <el-tab-pane label="333333" name="3"></el-tab-pane>
+    </el-tabs>
+
+    <iframe id="tab" name="" frameborder="0" width="100%" height="100%" scrolling="auto" :src="iframeSrc"></iframe>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {activeName: "1"},
+        computed: {
+            iframeSrc: function () {
+                return "../tab" + this.activeName + ".html"
+            }
+        }
+    })
+</script>
+</body>
+
+</html>

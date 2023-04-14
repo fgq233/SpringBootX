@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/qs/6.7.0/qs.min.js"></script>
+</head>
+
+<body>
+<div id="app">
+
+    <el-row v-if="total === 0">
+        <el-button type="primary" @click="saveAll">初始化全部数据</el-button>
+    </el-row>
+    <el-row v-if="total > 0">
+        <el-button type="primary" @click="showForm">新增</el-button>
+        <el-button type="primary" @click="delSelection">删除</el-button>
+        <el-button type="danger"  @click="deleteAll">清空索引库数据</el-button>
+    </el-row>
+
+    <el-form :inline="true" class="demo-form-inline" style="margin-top: 10px">
+        <el-form-item><el-input v-model="searchVal" placeholder="输入名称进行分词查询" clearable></el-input></el-form-item>
+        <el-form-item><el-button type="primary" @click="onSearch">查询</el-button></el-form-item>
+    </el-form>
+
+
+    <el-table :data="tableData" border style="width: 100%;margin: 0 0 15px 0" @selection-change="selectionChange">
+        <el-table-column type="selection" width="55"></el-table-column>
+        <el-table-column fixed prop="id" label="ID" width="80"></el-table-column>
+        <el-table-column fixed prop="name" label="名称" width="300"></el-table-column>
+        <el-table-column prop="address" label="地址" width="300"></el-table-column>
+        <el-table-column prop="price" label="价格" width="80"></el-table-column>
+        <el-table-column prop="score" label="评分" width="80"></el-table-column>
+        <el-table-column prop="brand" label="品牌" width="150"></el-table-column>
+        <el-table-column prop="city" label="城市" width="80"></el-table-column>
+        <el-table-column prop="starName" label="星级" width="150"></el-table-column>
+        <el-table-column prop="business" label="商业圈" width="180"></el-table-column>
+        <el-table-column prop="cjsj" label="创建时间" width="180"></el-table-column>
+        <el-table-column fixed="right" label="操作" width="">
+            <template slot-scope="scope">
+                <el-button @click="ckRow(scope.row, 'ck')" type="text" size="small">查看</el-button>
+                <el-button @click="ckRow(scope.row, 'edit')" type="text" size="small">编辑</el-button>
+                <el-button @click="deleteById(scope.row)" type="text" size="small">删除</el-button>
+            </template>
+        </el-table-column>
+    </el-table>
+
+    <el-pagination background
+                   layout="total, sizes, prev, pager, next"
+                   :total="total"
+                   @current-change="pageChange"
+                   @size-change="pageSizeChange"
+                   :page-size="pageSize"
+                   :page-sizes="[5, 10, 20]"
+                   v-if="total > 0">
+    </el-pagination>
+
+    <!--对话框表单-->
+    <el-dialog title="单个新增" :visible.sync="formVisible" width="30%">
+        <el-form ref="formHotel" :model="hotel" label-width="80px">
+            <el-form-item label="名称"><el-input v-model="hotel.name"></el-input></el-form-item>
+            <el-form-item label="地址"><el-input v-model="hotel.address"></el-input></el-form-item>
+            <el-form-item label="价格"> <el-input-number v-model="hotel.price" @change="handleChange" :min="0"></el-input-number></el-form-item>
+            <el-form-item label="评分"> <el-input-number v-model="hotel.score" @change="handleChange" :min="0"></el-input-number></el-form-item>
+
+            <el-form-item label="品牌">
+                <el-select v-model="hotel.brand" placeholder="请选择品牌">
+                    <el-option label="7天酒店" value="7天酒店"></el-option>
+                    <el-option label="速8" value="速8"></el-option>
+                    <el-option label="万怡" value="万怡"></el-option>
+                    <el-option label="豪生" value="豪生"></el-option>
+                    <el-option label="华美达" value="华美达"></el-option>
+                    <el-option label="皇冠假日" value="皇冠假日"></el-option>
+                    <el-option label="君悦" value="君悦"></el-option>
+                    <el-option label="希尔顿" value="希尔顿"></el-option>
+                    <el-option label="丽笙" value="丽笙"></el-option>
+                    <el-option label="喜来登" value="喜来登"></el-option>
+                    <el-option label="万豪" value="万豪"></el-option>
+                    <el-option label="维也纳" value="维也纳"></el-option>
+                    <el-option label="如家" value="如家"></el-option>
+                    <el-option label="和颐" value="和颐"></el-option>
+                    <el-option label="万丽" value="万丽"></el-option>
+                    <el-option label="汉庭" value="汉庭"></el-option>
+                    <el-option label="凯悦" value="凯悦"></el-option>
+                </el-select>
+            </el-form-item>
+            <el-form-item label="城市">
+                <el-select v-model="hotel.city" placeholder="请选择城市">
+                    <el-option label="上海" value="上海"></el-option>
+                    <el-option label="北京" value="北京"></el-option>
+                </el-select>
+            </el-form-item>
+            <el-form-item label="星级">
+                <el-select v-model="hotel.starName" placeholder="请选择星级">
+                    <el-option label="一星" value="一星"></el-option>
+                    <el-option label="二星" value="二星"></el-option>
+                    <el-option label="三星" value="三星"></el-option>
+                    <el-option label="四星" value="四星"></el-option>
+                    <el-option label="五星" value="五星"></el-option>
+                </el-select>
+            </el-form-item>
+            <el-form-item label="商业圈"><el-input v-model="hotel.business"></el-input></el-form-item>
+            <el-form-item label="创建时间">
+                <el-date-picker v-model="hotel.cjsj" type="datetime" placeholder="选择日期时间" format="yyyy-MM-dd HH:mm:ss" value-format="yyyy-MM-dd HH:mm:ss"></el-date-picker>
+            </el-form-item>
+
+            <el-form-item v-if="buttonType == 'edit'">
+                <el-button type="primary" @click="saveHotel">提交</el-button>
+                <el-button @click="formVisible = false">取消</el-button>
+            </el-form-item>
+        </el-form>
+
+    </el-dialog>
+</div>
+
+<script>
+    var qs = Qs;
+    axios.defaults.baseURL = 'http://localhost:8888/curd';
+
+    new Vue({
+        el: '#app',
+        data: {
+            pageSize: 5,
+            total: 0,
+            curPage: 1,
+            tableData: [],
+            formVisible: false,
+            hotel: {id: '', name: '', address: '', price: 0, score: 0, brand: '', city: '', starName: '', business: '', cjsj: ''},
+            buttonType: '',
+            searchVal: '',
+            multiSelection: [],
+        },
+        created() {
+            this.initData();
+        },
+        methods: {
+            // 分页查询
+            async initData() {
+                const {data: res} = await axios.get('/getPageList', {
+                    params: {
+                        curPage: this.curPage,
+                        pageSize: this.pageSize
+                    }
+                });
+                this.tableData = res.content;
+                this.total = res.totalElements;
+            },
+            // 批量新增数据
+            async saveAll() {
+                const {data: res} = await axios.post('/saveAll');
+                if (res.success) {
+                    this.initData();
+                }
+            },
+            // 批量删除
+            async deleteAll() {
+                const {data: res} = await axios.post('/deleteAll');
+                if (res.success) {
+                    this.initData();
+                }
+            },
+            // 单个删除
+            async deleteById(row) {
+                const {data: res} = await axios.post('/deleteById', qs.stringify({id: row.id}));
+                if (res.success) {
+                    this.initData();
+                }
+            },
+            // 展示表单
+            showForm() {
+                this.buttonType = 'edit';
+                this.hotel = {};
+                this.formVisible = true;
+            },
+            // 单个新增
+            async saveHotel() {
+                console.log(this.hotel);
+                const {data: res} = await axios.post('/save', qs.stringify({... this.hotel}));
+                if (res.success) {
+                    this.formVisible = false;
+                    this.initData();
+                }
+            },
+            // 单个查询
+            async ckRow(row, buttonType) {
+                const {data: res} = await axios.post('/findById', qs.stringify({id: row.id}));
+                if (res.success) {
+                    this.hotel = res.data;
+                    this.buttonType = buttonType;
+                    this.formVisible = true;
+                }
+            },
+            // 翻页
+            pageChange(curPage) {
+                this.curPage = curPage;
+                this.initData();
+            },
+            // 每页数量变化
+            pageSizeChange(pageSize) {
+                this.pageSize = pageSize;
+                this.initData();
+            },
+            // 选中
+            selectionChange(val) {
+                this.multiSelection = val;
+                // this.multiSelection = val.map((item) => {item.id});
+            },
+            // 批量删除
+            async delSelection() {
+                if(this.multiSelection && this.multiSelection.length){
+                    const {data: res} = await axios.post('/delSelection', this.multiSelection);
+                    if (res.success) {
+                        this.initData();
+                    }
+                } else {
+                    alert("至少选中一行");
+                }
+            },
+            // 搜索
+            async onSearch() {
+                if(this.searchVal && this.searchVal.length){
+                    const {data: res} = await axios.get('/search', {
+                        params: {
+                            searchVal: this.searchVal,
+                            curPage: this.curPage,
+                            pageSize: this.pageSize
+                        }
+                    });
+                    this.tableData = res.content;
+                    this.total = res.totalElements;
+                } else {
+                    this.initData();
+                }
+            },
+        }
+    })
+</script>
+</body>
+
+</html>

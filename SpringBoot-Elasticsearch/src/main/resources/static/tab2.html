@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+<div id="app">
+
+    <el-form :inline="true" class="form-inline" style="margin-top: 10px">
+        <el-form-item><el-input v-model="searchVal" placeholder="输入名称、地址、商业圈进行检索" clearable style="width: 300px"></el-input></el-form-item>
+        <el-form-item label="品牌">
+            <el-select v-model="brand" placeholder="请选择品牌">
+                <el-option label="7天酒店" value="7天酒店"></el-option>
+                <el-option label="速8" value="速8"></el-option>
+                <el-option label="万怡" value="万怡"></el-option>
+                <el-option label="豪生" value="豪生"></el-option>
+                <el-option label="华美达" value="华美达"></el-option>
+                <el-option label="皇冠假日" value="皇冠假日"></el-option>
+                <el-option label="君悦" value="君悦"></el-option>
+                <el-option label="希尔顿" value="希尔顿"></el-option>
+                <el-option label="丽笙" value="丽笙"></el-option>
+                <el-option label="喜来登" value="喜来登"></el-option>
+                <el-option label="万豪" value="万豪"></el-option>
+                <el-option label="维也纳" value="维也纳"></el-option>
+                <el-option label="如家" value="如家"></el-option>
+                <el-option label="和颐" value="和颐"></el-option>
+                <el-option label="万丽" value="万丽"></el-option>
+                <el-option label="汉庭" value="汉庭"></el-option>
+                <el-option label="凯悦" value="凯悦"></el-option>
+            </el-select>
+        </el-form-item>
+        <el-form-item label="城市">
+            <el-select v-model="city" placeholder="请选择城市">
+                <el-option label="上海" value="上海"></el-option>
+                <el-option label="北京" value="北京"></el-option>
+            </el-select>
+        </el-form-item>
+        <el-form-item label="星级">
+            <el-select v-model="starName" placeholder="请选择星级">
+                <el-option label="一星" value="一星"></el-option>
+                <el-option label="二星" value="二星"></el-option>
+                <el-option label="三星" value="三星"></el-option>
+                <el-option label="四星" value="四星"></el-option>
+                <el-option label="五星" value="五星"></el-option>
+            </el-select>
+        </el-form-item>
+        <el-form-item label="排序条件">
+            <el-select v-model="sort" placeholder="请选择排序条件">
+                <el-option label="按匹配度得分排序" value="0"></el-option>
+                <el-option label="按价格升序" value="1"></el-option>
+                <el-option label="按价格降序" value="2"></el-option>
+                <el-option label="按评分升序" value="3"></el-option>
+                <el-option label="按评分降序" value="4"></el-option>
+                <el-option label="按时间升序" value="5"></el-option>
+                <el-option label="按时间降序" value="6"></el-option>
+            </el-select>
+        </el-form-item>
+        <el-form-item label="搜索条件是否高亮">
+            <el-radio v-model="highlight" label="1">是</el-radio>
+            <el-radio v-model="highlight" label="0">否</el-radio>
+        </el-form-item>
+        <el-form-item><el-button type="primary" @click="searchPageList">查询</el-button></el-form-item>
+    </el-form>
+
+
+    <el-table :data="tableData" border style="width: 100%;margin: 0 0 15px 0">
+        <el-table-column fixed prop="id" label="ID" width="80"></el-table-column>
+        <el-table-column prop="name" label="名称" width="300">
+            <template slot-scope="scope">
+                <p v-html='scope.row.name'></p>
+            </template>
+        </el-table-column>
+        <el-table-column prop="address" label="地址" width="300">
+            <template slot-scope="scope">
+                <p v-html='scope.row.address'></p>
+            </template>
+        </el-table-column>
+        <el-table-column prop="price" label="价格" width="80"></el-table-column>
+        <el-table-column prop="score" label="评分" width="80"></el-table-column>
+        <el-table-column prop="brand" label="品牌" width="150"></el-table-column>
+        <el-table-column prop="city" label="城市" width="80"></el-table-column>
+        <el-table-column prop="starName" label="星级" width="150"></el-table-column>
+        <el-table-column prop="business" label="商业圈" width="180">
+            <template slot-scope="scope">
+                <p v-html='scope.row.business'></p>
+            </template>
+        </el-table-column>
+        <el-table-column prop="cjsj" label="创建时间" width="180"></el-table-column>
+        <el-table-column fixed="right" label="" width=""></el-table-column>
+    </el-table>
+
+    <el-pagination background
+                   layout="total, sizes, prev, pager, next"
+                   :total="total"
+                   @current-change="pageChange"
+                   @size-change="pageSizeChange"
+                   :page-size="pageSize"
+                   :page-sizes="[5, 10, 20]"
+                   v-if="total > 0">
+    </el-pagination>
+
+
+</div>
+
+<script>
+    axios.defaults.baseURL = 'http://localhost:8888/query';
+
+    new Vue({
+        el: '#app',
+        data: {
+            pageSize: 5,
+            total: 0,
+            curPage: 1,
+            tableData: [],
+
+            searchVal: '',
+            brand: '',
+            city: '',
+            starName: '',
+            sort: '0',
+            highlight: '0',
+        },
+        created() {
+            this.searchPageList();
+        },
+        methods: {
+            // 分页查询
+            async searchPageList() {
+                const {data: res} = await axios.get('/searchPageList', {
+                    params: {
+                        curPage: this.curPage,
+                        pageSize: this.pageSize,
+                        searchVal: this.searchVal,
+                        brand: this.brand,
+                        city: this.city,
+                        starName: this.starName,
+                        sort: this.sort,
+                        highlight: this.highlight,
+                    }
+                });
+                this.tableData = res.content;
+                this.total = res.totalElements;
+            },
+            // 翻页
+            pageChange(curPage) {
+                this.curPage = curPage;
+                this.searchPageList();
+            },
+            // 每页数量变化
+            pageSizeChange(pageSize) {
+                this.pageSize = pageSize;
+                this.searchPageList();
+            }
+        }
+    })
+</script>
+</body>
+
+</html>

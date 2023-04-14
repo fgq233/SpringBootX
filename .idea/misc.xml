@@ -18,6 +18,7 @@
         <option value="$PROJECT_DIR$/SpringBoot-SpringSecurity-OAuth2/pom.xml" />
         <option value="$PROJECT_DIR$/SprintBoot-Phantomjs/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot-SpringSecurity/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot-Elasticsearch/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

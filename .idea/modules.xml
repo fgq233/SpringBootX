@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-ActiveMQ/SpringBoot-ActiveMQ.iml" filepath="$PROJECT_DIR$/SpringBoot-ActiveMQ/SpringBoot-ActiveMQ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-Elasticsearch/SpringBoot-Elasticsearch.iml" filepath="$PROJECT_DIR$/SpringBoot-Elasticsearch/SpringBoot-Elasticsearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-Https/SpringBoot-Https.iml" filepath="$PROJECT_DIR$/SpringBoot-Https/SpringBoot-Https.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-MongoDB/SpringBoot-MongoDB.iml" filepath="$PROJECT_DIR$/SpringBoot-MongoDB/SpringBoot-MongoDB.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-MybatisPlus/SpringBoot-MybatisPlus.iml" filepath="$PROJECT_DIR$/SpringBoot-MybatisPlus/SpringBoot-MybatisPlus.iml" />
