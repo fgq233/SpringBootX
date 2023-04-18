@@ -14,7 +14,7 @@
 <div id="app">
 
     <el-form :inline="true" class="form-inline" style="margin-top: 10px">
-        <el-form-item><el-input v-model="searchVal" placeholder="输入名称、地址、商业圈进行检索" clearable style="width: 300px"></el-input></el-form-item>
+        <el-form-item><el-input v-model="searchVal" placeholder="输入名称、地址、商业圈进行检索" clearable style="width: 280px"></el-input></el-form-item>
         <el-form-item label="品牌">
             <el-select v-model="brand" placeholder="请选择品牌">
                 <el-option label="7天酒店" value="7天酒店"></el-option>
@@ -68,16 +68,15 @@
                 <el-option label="按时间降序" value="6"></el-option>
             </el-select>
         </el-form-item>
-    </el-form>
-    <el-form :inline="true" class="form-inline" style="margin-top: 10px">
-        <el-form-item label="搜索条件是否高亮" style="width: 300px">
+        <el-form-item label="搜索条件是否高亮" label-width="200px">
             <el-switch  v-model="highlight"></el-switch>
         </el-form-item>
-        <el-form-item label="搜索条件是否开启算分函数评分" style="width: 300px">
+        <el-form-item label="搜索条件是否开启算分函数评分" label-width="200px">
             <el-switch  v-model="functionScore"></el-switch>
         </el-form-item>
         <el-form-item><el-button type="primary" @click="searchPageList">查询</el-button></el-form-item>
     </el-form>
+
 
     <el-table :data="tableData" border style="width: 100%;margin: 0 0 15px 0">
         <el-table-column fixed prop="id" label="ID" width="80"></el-table-column>
