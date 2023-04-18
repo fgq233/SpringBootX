@@ -51,6 +51,12 @@
                 <el-option label="五星" value="五星"></el-option>
             </el-select>
         </el-form-item>
+        <el-form-item label="开始时间">
+            <el-date-picker v-model="kssj" type="datetime" format="yyyy-MM-dd HH:mm:ss" value-format="yyyy-MM-dd HH:mm:ss"></el-date-picker>
+        </el-form-item>
+        <el-form-item label="结束时间">
+            <el-date-picker v-model="jssj" type="datetime" format="yyyy-MM-dd HH:mm:ss" value-format="yyyy-MM-dd HH:mm:ss"></el-date-picker>
+        </el-form-item>
         <el-form-item label="排序条件">
             <el-select v-model="sort" placeholder="请选择排序条件">
                 <el-option label="按匹配度得分排序" value="0"></el-option>
@@ -62,13 +68,16 @@
                 <el-option label="按时间降序" value="6"></el-option>
             </el-select>
         </el-form-item>
-        <el-form-item label="搜索条件是否高亮">
-            <el-radio v-model="highlight" label="1">是</el-radio>
-            <el-radio v-model="highlight" label="0">否</el-radio>
+    </el-form>
+    <el-form :inline="true" class="form-inline" style="margin-top: 10px">
+        <el-form-item label="搜索条件是否高亮" style="width: 300px">
+            <el-switch  v-model="highlight"></el-switch>
+        </el-form-item>
+        <el-form-item label="搜索条件是否开启算分函数评分" style="width: 300px">
+            <el-switch  v-model="functionScore"></el-switch>
         </el-form-item>
         <el-form-item><el-button type="primary" @click="searchPageList">查询</el-button></el-form-item>
     </el-form>
-
 
     <el-table :data="tableData" border style="width: 100%;margin: 0 0 15px 0">
         <el-table-column fixed prop="id" label="ID" width="80"></el-table-column>
@@ -124,8 +133,11 @@
             brand: '',
             city: '',
             starName: '',
+            kssj: '',
+            jssj: '',
             sort: '0',
-            highlight: '0',
+            highlight: true,
+            functionScore: false,
         },
         created() {
             this.searchPageList();
@@ -141,8 +153,11 @@
                         brand: this.brand,
                         city: this.city,
                         starName: this.starName,
+                        kssj: this.kssj,
+                        jssj: this.jssj,
                         sort: this.sort,
                         highlight: this.highlight,
+                        functionScore: this.functionScore,
                     }
                 });
                 this.tableData = res.content;

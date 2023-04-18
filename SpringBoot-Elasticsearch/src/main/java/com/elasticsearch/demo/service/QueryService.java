@@ -6,6 +6,7 @@ import org.elasticsearch.common.lucene.search.function.FunctionScoreQuery;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.MultiMatchQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.index.query.RangeQueryBuilder;
 import org.elasticsearch.index.query.functionscore.FunctionScoreQueryBuilder;
 import org.elasticsearch.index.query.functionscore.ScoreFunctionBuilders;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
@@ -35,13 +36,15 @@ public class QueryService implements IQueryService {
     private ElasticsearchRestTemplate elasticsearchRestTemplate;
 
     @Override
-    public Page<Hotel> searchPageList(String searchVal, String brand, String city, String starName, Integer sort, Integer highlight, Integer curPage, Integer pageSize) {
+    public Page<Hotel> searchPageList(String searchVal, String brand, String city, String starName, String kssj, String jssj, Integer sort,
+                                      Boolean highlight, Boolean functionScore, Integer curPage, Integer pageSize) {
         NativeSearchQueryBuilder nativeSearchQueryBuilder = new NativeSearchQueryBuilder();
         // 分页
         Pageable pageable = PageRequest.of(curPage - 1, pageSize);
         nativeSearchQueryBuilder.withPageable(pageable);
         // 过滤
-        if (StringUtils.isNotBlank(brand) || StringUtils.isNotBlank(city) || StringUtils.isNotBlank(starName)) {
+        if (StringUtils.isNotBlank(brand) || StringUtils.isNotBlank(city) || StringUtils.isNotBlank(starName)
+                || StringUtils.isNotBlank(kssj) || StringUtils.isNotBlank(jssj)) {
             BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery();
             if (StringUtils.isNotBlank(brand)) {
                 boolQueryBuilder.must(QueryBuilders.termQuery("brand", brand));
@@ -52,37 +55,55 @@ public class QueryService implements IQueryService {
             if (StringUtils.isNotBlank(starName)) {
                 boolQueryBuilder.must(QueryBuilders.termQuery("starName", starName));
             }
+            if (StringUtils.isNotBlank(kssj) || StringUtils.isNotBlank(jssj)) {
+                RangeQueryBuilder rangeQueryBuilder = QueryBuilders.rangeQuery("cjsj")
+                        .format("yyyy-MM-dd HH:mm:ss")
+                        .timeZone("GMT+8");
+                if (StringUtils.isNotBlank(kssj)) {
+                    rangeQueryBuilder.gte(kssj);
+                }
+                if (StringUtils.isNotBlank(jssj)) {
+                    rangeQueryBuilder.lte(jssj);
+                }
+                rangeQueryBuilder.includeLower(true).includeUpper(true);
+                boolQueryBuilder.must(rangeQueryBuilder);
+            }
             nativeSearchQueryBuilder.withFilter(boolQueryBuilder);
         }
         // 搜索
         if (StringUtils.isNotBlank(searchVal)) {
-            List<FunctionScoreQueryBuilder.FilterFunctionBuilder> filterFunctionBuilders = new ArrayList<>();
-            filterFunctionBuilders.add(new FunctionScoreQueryBuilder.FilterFunctionBuilder(QueryBuilders.matchQuery("name", searchVal),
-                    ScoreFunctionBuilders.weightFactorFunction(10)));
-            filterFunctionBuilders.add(new FunctionScoreQueryBuilder.FilterFunctionBuilder(QueryBuilders.matchQuery("address", searchVal),
-                    ScoreFunctionBuilders.weightFactorFunction(5)));
-            filterFunctionBuilders.add(new FunctionScoreQueryBuilder.FilterFunctionBuilder(QueryBuilders.matchQuery("business", searchVal),
-                    ScoreFunctionBuilders.weightFactorFunction(2)));
-            FunctionScoreQueryBuilder.FilterFunctionBuilder[] builders = new FunctionScoreQueryBuilder.FilterFunctionBuilder[filterFunctionBuilders.size()];
-            filterFunctionBuilders.toArray(builders);
+            if (functionScore) {
+                // 算分函数
+                List<FunctionScoreQueryBuilder.FilterFunctionBuilder> filterFunctionBuilders = new ArrayList<>();
+                filterFunctionBuilders.add(new FunctionScoreQueryBuilder.FilterFunctionBuilder(QueryBuilders.matchQuery("name", searchVal),
+                        ScoreFunctionBuilders.weightFactorFunction(10)));
+                filterFunctionBuilders.add(new FunctionScoreQueryBuilder.FilterFunctionBuilder(QueryBuilders.matchQuery("address", searchVal),
+                        ScoreFunctionBuilders.weightFactorFunction(5)));
+                filterFunctionBuilders.add(new FunctionScoreQueryBuilder.FilterFunctionBuilder(QueryBuilders.matchQuery("business", searchVal),
+                        ScoreFunctionBuilders.weightFactorFunction(2)));
+                FunctionScoreQueryBuilder.FilterFunctionBuilder[] builders = new FunctionScoreQueryBuilder.FilterFunctionBuilder[filterFunctionBuilders.size()];
+                filterFunctionBuilders.toArray(builders);
 
-            FunctionScoreQueryBuilder functionScoreQueryBuilder;
-            if (highlight == 1) {
-                MultiMatchQueryBuilder multiMatchQueryBuilder = QueryBuilders.multiMatchQuery(searchVal, "name", "address", "business");
-                functionScoreQueryBuilder = QueryBuilders.functionScoreQuery(multiMatchQueryBuilder, builders)
-                        .scoreMode(FunctionScoreQuery.ScoreMode.SUM)
-                        .setMinScore(2);
+                FunctionScoreQueryBuilder functionScoreQueryBuilder;
+                if (highlight) {
+                    MultiMatchQueryBuilder multiMatchQueryBuilder = QueryBuilders.multiMatchQuery(searchVal, "name", "address", "business");
+                    functionScoreQueryBuilder = QueryBuilders.functionScoreQuery(multiMatchQueryBuilder, builders)
+                            .scoreMode(FunctionScoreQuery.ScoreMode.SUM)
+                            .setMinScore(2);
+                } else {
+                    functionScoreQueryBuilder = QueryBuilders.functionScoreQuery(builders)
+                            .scoreMode(FunctionScoreQuery.ScoreMode.SUM)
+                            .setMinScore(2);
+                }
+                nativeSearchQueryBuilder.withQuery(functionScoreQueryBuilder);
             } else {
-                functionScoreQueryBuilder = QueryBuilders.functionScoreQuery(builders)
-                        .scoreMode(FunctionScoreQuery.ScoreMode.SUM)
-                        .setMinScore(2);
+                nativeSearchQueryBuilder.withQuery(QueryBuilders.multiMatchQuery(searchVal, "name", "address", "business"));
             }
-            nativeSearchQueryBuilder.withQuery(functionScoreQueryBuilder);
         } else {
             nativeSearchQueryBuilder.withQuery(QueryBuilders.matchAllQuery());
         }
         // 高亮
-        if (highlight == 1) {
+        if (highlight) {
             HighlightBuilder highlightBuilder = new HighlightBuilder();
             highlightBuilder.preTags("<font color='red'>");
             highlightBuilder.postTags("</font>");
@@ -104,15 +125,12 @@ public class QueryService implements IQueryService {
             } else if (sort == 6) {
                 nativeSearchQueryBuilder.withSort(SortBuilders.fieldSort("cjsj").order(SortOrder.DESC));
             }
-        } else {
-            //按算分排序
-            nativeSearchQueryBuilder.withSort(SortBuilders.scoreSort().order(SortOrder.DESC));
         }
         NativeSearchQuery searchQuery = nativeSearchQueryBuilder.build();
         // 查询
         SearchHits<Hotel> searchHits = elasticsearchRestTemplate.search(searchQuery, Hotel.class);
         List<Hotel> content;
-        if (highlight == 1) {
+        if (highlight) {
             // 高亮结果处理
             content = searchHits.stream().map(hit -> {
                 Hotel hotel = hit.getContent();

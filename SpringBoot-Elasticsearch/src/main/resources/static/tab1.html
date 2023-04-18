@@ -65,8 +65,8 @@
         <el-form ref="formHotel" :model="hotel" label-width="80px">
             <el-form-item label="名称"><el-input v-model="hotel.name"></el-input></el-form-item>
             <el-form-item label="地址"><el-input v-model="hotel.address"></el-input></el-form-item>
-            <el-form-item label="价格"> <el-input-number v-model="hotel.price" @change="handleChange" :min="0"></el-input-number></el-form-item>
-            <el-form-item label="评分"> <el-input-number v-model="hotel.score" @change="handleChange" :min="0"></el-input-number></el-form-item>
+            <el-form-item label="价格"> <el-input-number v-model="hotel.price" :min="0"></el-input-number></el-form-item>
+            <el-form-item label="评分"> <el-input-number v-model="hotel.score" :min="0"></el-input-number></el-form-item>
 
             <el-form-item label="品牌">
                 <el-select v-model="hotel.brand" placeholder="请选择品牌">
