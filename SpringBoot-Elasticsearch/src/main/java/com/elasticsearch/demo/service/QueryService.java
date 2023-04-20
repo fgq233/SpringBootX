@@ -36,6 +36,60 @@ public class QueryService implements IQueryService {
     private ElasticsearchRestTemplate elasticsearchRestTemplate;
 
     @Override
+    public Page<Hotel> singleConditionSearch(String condition, String val, Integer valStart, Integer valEnd, String kssj, String jssj, Integer curPage, Integer pageSize) {
+        NativeSearchQueryBuilder queryBuilder = new NativeSearchQueryBuilder();
+        // 分页
+        Pageable pageable = PageRequest.of(curPage - 1, pageSize);
+        queryBuilder.withPageable(pageable);
+        // 常用查询类型
+        if (StringUtils.isNotBlank(condition)) {
+            switch (condition) {
+                case "1":
+                    queryBuilder.withQuery(QueryBuilders.matchQuery("name", val));
+                    break;
+                case "2":
+                    queryBuilder.withQuery(QueryBuilders.matchQuery("address", val));
+                    break;
+                case "3":
+                    queryBuilder.withQuery(QueryBuilders.matchQuery("business", val));
+                    break;
+                case "4":
+                    queryBuilder.withQuery(QueryBuilders.rangeQuery("price").gte(valStart).lte(valEnd));
+                    break;
+                case "5":
+                    queryBuilder.withQuery(QueryBuilders.rangeQuery("score").gte(valStart).lte(valEnd));
+                    break;
+                case "6":
+                    queryBuilder.withQuery(QueryBuilders.termQuery("brand", val));
+                    break;
+                case "7":
+                    queryBuilder.withQuery(QueryBuilders.termQuery("city", val));
+                    break;
+                case "8":
+                    queryBuilder.withQuery(QueryBuilders.termQuery("starName", val));
+                    break;
+                case "9":
+                    RangeQueryBuilder rangeQueryBuilder = QueryBuilders.rangeQuery("cjsj")
+                            .format("yyyy-MM-dd HH:mm:ss")
+                            .timeZone("GMT+8");
+                    if (StringUtils.isNotBlank(kssj)) {
+                        rangeQueryBuilder.gte(kssj);
+                    }
+                    if (StringUtils.isNotBlank(jssj)) {
+                        rangeQueryBuilder.lte(jssj);
+                    }
+                    rangeQueryBuilder.includeLower(true).includeUpper(true);
+                    queryBuilder.withQuery(rangeQueryBuilder);
+                    break;
+            }
+        }
+        // 查询
+        SearchHits<Hotel> searchHits = elasticsearchRestTemplate.search(queryBuilder.build(), Hotel.class);
+        List<Hotel> content = searchHits.stream().map(SearchHit::getContent).collect(Collectors.toList());
+        return new PageImpl<>(content, pageable, searchHits.getTotalHits());
+    }
+
+    @Override
     public Page<Hotel> searchPageList(String searchVal, String brand, String city, String starName, String kssj, String jssj, Integer sort,
                                       Boolean highlight, Boolean functionScore, Integer curPage, Integer pageSize) {
         NativeSearchQueryBuilder nativeSearchQueryBuilder = new NativeSearchQueryBuilder();
