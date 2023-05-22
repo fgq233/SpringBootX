@@ -8,7 +8,7 @@ spring:
       suffix: .html
   elasticsearch:
     rest:
-      uris: http://172.28.1.219:9200
+      uris: http://172.28.1.236:9200
       username: elastic
       password: 123456
       connection-timeout: 5
@@ -18,7 +18,7 @@ spring:
       repositories:
         enabled: true
   datasource:
-    url: jdbc:mysql://172.28.1.219:3306/es?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8
+    url: jdbc:mysql://172.28.1.236:3306/es?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8
     username: fgq
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
