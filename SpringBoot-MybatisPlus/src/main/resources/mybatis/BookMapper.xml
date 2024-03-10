@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "Http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mybatisplus.demo.mapper.BookMapper">
+
+
+    <!--   动态sql: if标签 -->
+    <select id="findByIf" resultType="com.mybatisplus.demo.domain.Book" parameterType="com.mybatisplus.demo.domain.Book">
+        select * from sys_book
+        <where>
+            <if test="id!=null">
+                and id = #{id}
+            </if>
+            <if test="price!=null">
+                and price = #{price}
+            </if>
+            <if test="num!=null">
+                and num = #{num}
+            </if>
+        </where>
+    </select>
+
+    <!--   动态sql: foreach标签 -->
+    <!--   等价于 select * from sys_book where id in(?,?,?)  -->
+    <select id="findByList" resultType="com.mybatisplus.demo.domain.Book" parameterType="list">
+        select * from sys_book
+        <where>
+            <foreach collection="list" open="id in (" close=")" item="id" separator=",">
+                #{id}
+            </foreach>
+        </where>
+    </select>
+
+
+    <!--    sql片段，抽取通用sql-->
+    <sql id="commonSql">
+        select * from sys_book
+    </sql>
+
+
+    <!--   include 引用通用sql -->
+    <select id="findByList2" resultType="com.mybatisplus.demo.domain.Book" parameterType="list">
+        <include refid="commonSql"/>
+        <where>
+            <foreach collection="list" open="id in (" close=")" item="id" separator=",">
+                #{id}
+            </foreach>
+        </where>
+    </select>
+
+
+    <!--   include 引用通用sql -->
+    <select id="findByUserId" resultType="com.mybatisplus.demo.domain.Book" parameterType="int">
+        <include refid="commonSql"/>
+        <where>
+            <if test="user_id!=null">
+                and user_id = #{user_id}
+            </if>
+        </where>
+    </select>
+
+
+
+
+    <!-- 一对一查询 -->
+    <!--    返回实体映射, column(sql查询结果中的字段名)、property(实体) -->
+    <resultMap id="bookResult" type="com.mybatisplus.demo.domain.Book">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="price" property="price"/>
+        <result column="is_deleted" property="isDeleted"/>
+
+        <association property="user" javaType="com.mybatisplus.demo.domain.User">
+            <id column="uid" property="id"/>
+            <result column="uname" property="name"/>
+            <result column="age" property="age"/>
+            <result column="email" property="email"/>
+            <result column="is_deleted2" property="isDeleted"/>
+        </association>
+    </resultMap>
+    <select id="find1To1" resultMap="bookResult">
+        SELECT b.id, b.name, b.price, b.is_deleted,
+            u.id uid, u.name uname, u.age, u.email, u.is_deleted is_deleted2
+        FROM sys_book b, sys_user u
+        WHERE b.user_id = u.id
+    </select>
+
+
+
+
+    <!--    一对多查询 ofType:集合中的实体 -->
+    <!--    返回实体映射, column(sql查询结果中的字段名)、property(实体) -->
+    <resultMap id="userResult" type="com.mybatisplus.demo.domain.User">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="age" property="age"/>
+        <result column="email" property="email"/>
+        <result column="is_delete" property="isDeleted"/>
+
+        <collection property="bookList" ofType="com.mybatisplus.demo.domain.Book">
+            <id column="bid" property="id"/>
+            <result column="bname" property="name"/>
+            <result column="price" property="price"/>
+            <result column="is_deleted2" property="isDeleted"/>
+        </collection>
+    </resultMap>
+    <select id="find1ToMore" resultMap="userResult" parameterType="int">
+        SELECT u.id, u.name, u.age, u.email, u.is_deleted,
+            b.id bid, b.name bname, b.price, b.is_deleted is_deleted2
+        FROM sys_user u, sys_book b
+        WHERE u.id = b.user_id
+        and u.id = #{id}
+    </select>
+
+</mapper>

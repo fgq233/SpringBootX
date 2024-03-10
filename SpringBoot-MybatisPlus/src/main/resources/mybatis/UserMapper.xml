@@ -5,14 +5,6 @@
 
 <mapper namespace="com.mybatisplus.demo.mapper.UserMapper">
 
-<!--    全路径  -->
-<!--    <select id="findById" resultType="com.zookeeper.demo.domain.User">-->
-<!--        select * from tb_user where id = #{id}-->
-<!--    </select>-->
-
-    <select id="findById" resultType="user">
-        select * from tb_user where id = #{id}
-    </select>
 
 
 

@@ -2,32 +2,32 @@ package com.mybatisplus.demo.domain;
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.util.List;
 
+
 @Data
-@TableName("tb_user")
+@EqualsAndHashCode
+@TableName("sys_user")
 public class User {
 
-    @TableId(type = IdType.INPUT)
+    @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
-    // TableField可标识字段和数据库名称不一致的
-    @TableField("username")
-    private String username;
+    @TableField("name")
+    private String name;
 
-    private String address;
+    private Integer age;
 
-    // 逻辑删除，默认查询会带上 yxzt = 1
-    @TableLogic(value = "1", delval = "0")
-    private Integer yxzt;
+    private String email;
 
-    // 数据库没有的字段
-    @TableField(exist = false)
-    private Long age;
-
+    @TableLogic
+    private Integer isDeleted;
 
     @TableField(exist = false)
-    private List<Order> orderList;
+    private List<Book> bookList;
 
 }
+
+
