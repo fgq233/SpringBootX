@@ -98,6 +98,8 @@ class UserCurdTest {
         // 根据 entity 条件查询，返回的是 List<T>
         QueryWrapper<User> qw2 = new QueryWrapper<>();
         qw2.likeRight("email", "test");
+        // 取 1 条数据
+        // qw2.last(" limit 1 ");
         List<User> list2 = userMapper.selectList(qw2);
         list2.forEach(System.out::println);
 
