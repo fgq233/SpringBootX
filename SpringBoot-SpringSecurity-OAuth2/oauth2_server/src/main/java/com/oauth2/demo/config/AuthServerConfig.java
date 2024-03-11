@@ -1,5 +1,6 @@
 package com.oauth2.demo.config;
 
+import com.oauth2.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -30,19 +31,22 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
                 .redirectUris("http://www.baidu.com")   // 重定向地址 redirect_uri，用于授权成功后跳转
                 .autoApprove(false)                     // false 跳转到授权页面，true直接重定向并返回授权码
                 .scopes("all")                          // 申请的权限范围
-                .authorizedGrantTypes("authorization_code", "password"); // 授权模式
+                .authorizedGrantTypes("authorization_code", "password", "refresh_token"); // 授权模式
     }
 
 
     @Autowired
     private AuthenticationManager authenticationManager;
+    @Autowired
+    private UserService userService;
 
     /**
      * 使用密码模式需要配置
      */
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) {
-        endpoints.authenticationManager(authenticationManager);
+        endpoints.authenticationManager(authenticationManager)
+                .userDetailsService(userService);   // 使用 refresh_token 模式需要
     }
 
     /**
