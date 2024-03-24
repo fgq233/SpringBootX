@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.thread;
 
 public class WorkerThread implements Runnable {
 

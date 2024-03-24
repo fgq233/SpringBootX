@@ -1,21 +1,19 @@
-package com.example.demo;
+package com.example.demo.data;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Data
 @EqualsAndHashCode
-@NoArgsConstructor
 @AllArgsConstructor
 public class Person implements Comparable<Person> {
 
-    private int id;
+    private Integer id;
     private String name;
-    private int age;
+    private Integer age;
     private List<Book> books;
 
     @Override
