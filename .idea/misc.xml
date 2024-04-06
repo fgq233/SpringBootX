@@ -19,6 +19,19 @@
         <option value="$PROJECT_DIR$/SprintBoot-Phantomjs/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot-SpringSecurity/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot-Elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/X-ActiveMQ/pom.xml" />
+        <option value="$PROJECT_DIR$/X-Elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/X-Https/pom.xml" />
+        <option value="$PROJECT_DIR$/X-MongoDB/pom.xml" />
+        <option value="$PROJECT_DIR$/X-MybatisPlus/pom.xml" />
+        <option value="$PROJECT_DIR$/X-RocketMQ/pom.xml" />
+        <option value="$PROJECT_DIR$/X-Shiro/pom.xml" />
+        <option value="$PROJECT_DIR$/X-Phantomjs/pom.xml" />
+        <option value="$PROJECT_DIR$/X-Zookeeper/pom.xml" />
+        <option value="$PROJECT_DIR$/X-SpringSecurity/pom.xml" />
+        <option value="$PROJECT_DIR$/X-OAuth2/oauth2_server_jwt/pom.xml" />
+        <option value="$PROJECT_DIR$/Test/pom.xml" />
+        <option value="$PROJECT_DIR$/X-OAuth2/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

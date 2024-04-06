@@ -9,22 +9,23 @@
         <outputRelativeToContentRoot value="true" />
         <module name="oauth2_server" />
         <module name="oauth2_server_jwt" />
-        <module name="SpringBoot-Shiro" />
         <module name="oauth2_server_jdbc" />
-        <module name="SpringBoot-Elasticsearch" />
-        <module name="SpringBoot-MongoDB" />
-        <module name="SprintBoot-Phantomjs" />
         <module name="rocketmq-producer" />
+        <module name="X-Phantomjs" />
         <module name="oauth2_source" />
+        <module name="X-Shiro" />
+        <module name="X-Https" />
         <module name="oauth2_server_redis" />
-        <module name="SpringBoot-Https" />
+        <module name="Test" />
         <module name="rocketmq-consumer" />
+        <module name="X-Zookeeper" />
         <module name="publisher" />
-        <module name="SpringBoot-Zookeeper" />
+        <module name="X-Elasticsearch" />
         <module name="rocketmq-api" />
-        <module name="SpringBoot-MybatisPlus" />
-        <module name="SpringBoot-SpringSecurity" />
+        <module name="X-MybatisPlus" />
+        <module name="X-SpringSecurity" />
         <module name="consumer" />
+        <module name="X-MongoDB" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -41,30 +42,32 @@
       <module name="rocketmq-consumer" target="1.8" />
       <module name="rocketmq-producer" target="1.8" />
       <module name="SpringBoo-SpringSecurity-OAuth2" target="1.8" />
-      <module name="SpringBoot-ActiveMQ" target="1.8" />
-      <module name="SpringBoot-Elasticsearch" target="1.8" />
-      <module name="SpringBoot-Https" target="1.8" />
-      <module name="SpringBoot-MongoDB" target="1.8" />
-      <module name="SpringBoot-MybatisPlus" target="1.8" />
       <module name="SpringBoot-Phantomjs" target="8" />
-      <module name="SpringBoot-RocketMQ" target="1.8" />
-      <module name="SpringBoot-Shiro" target="1.8" />
-      <module name="SpringBoot-SpringSecurity" target="1.8" />
-      <module name="SpringBoot-SpringSecurity-OAuth2" target="1.8" />
-      <module name="SpringBoot-Zookeeper" target="1.8" />
-      <module name="SprintBoot-Phantomjs" target="1.8" />
+      <module name="Test" target="1.8" />
+      <module name="X-ActiveMQ" target="1.8" />
+      <module name="X-Elasticsearch" target="1.8" />
+      <module name="X-Https" target="1.8" />
+      <module name="X-MongoDB" target="1.8" />
+      <module name="X-MybatisPlus" target="1.8" />
+      <module name="X-OAuth2" target="1.8" />
+      <module name="X-Phantomjs" target="1.8" />
+      <module name="X-RocketMQ" target="1.8" />
+      <module name="X-Shiro" target="1.8" />
+      <module name="X-SpringSecurity" target="1.8" />
+      <module name="X-Zookeeper" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="SpringBoot-Elasticsearch" options="-parameters" />
-      <module name="SpringBoot-Https" options="-parameters" />
-      <module name="SpringBoot-MongoDB" options="-parameters" />
-      <module name="SpringBoot-MybatisPlus" options="-parameters" />
-      <module name="SpringBoot-Shiro" options="-parameters" />
-      <module name="SpringBoot-SpringSecurity" options="-parameters" />
-      <module name="SpringBoot-Zookeeper" options="-parameters" />
-      <module name="SprintBoot-Phantomjs" options="-parameters" />
+      <module name="Test" options="" />
+      <module name="X-Elasticsearch" options="-parameters" />
+      <module name="X-Https" options="-parameters" />
+      <module name="X-MongoDB" options="-parameters" />
+      <module name="X-MybatisPlus" options="-parameters" />
+      <module name="X-Phantomjs" options="-parameters" />
+      <module name="X-Shiro" options="-parameters" />
+      <module name="X-SpringSecurity" options="-parameters" />
+      <module name="X-Zookeeper" options="-parameters" />
       <module name="consumer" options="-parameters" />
       <module name="oauth2_server" options="-parameters" />
       <module name="oauth2_server_jdbc" options="-parameters" />
