@@ -2,6 +2,7 @@ package com.mybatisplus.demo;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.conditions.update.LambdaUpdateChainWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.mybatisplus.demo.domain.User;
 import com.mybatisplus.demo.mapper.UserMapper;
@@ -74,6 +75,12 @@ class UserCurdTest {
         QueryWrapper<User> qw = new QueryWrapper<>();
         qw.eq("name", "fgq");
         userMapper.update(user2, qw);
+
+        // 链式更新
+        new LambdaUpdateChainWrapper<>(userMapper)
+                .set(User::getEmail, "fff@163.com")
+                .eq(User::getId, 1L)
+                .update();
     }
 
     /**
