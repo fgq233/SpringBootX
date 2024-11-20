@@ -7,8 +7,10 @@ import java.math.RoundingMode;
 import java.util.Optional;
 
 @Data
-public class A8 {
+public class A {
 
+    // 代码
+    private String code;
     // 涨跌幅(%)
     private BigDecimal pc;
     // 当前价格(元)
@@ -36,8 +38,9 @@ public class A8 {
 
     @Override
     public String toString() {
-        return "A8{" +
-                "涨跌幅=" + pc +
+        return "{" +
+                "code=" + code +
+                ", 涨跌幅=" + pc +
                 ", 当前价格=" + p +
                 ", 最高价=" + h +
                 ", 最低价=" + l +
